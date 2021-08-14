@@ -11,6 +11,11 @@
 //::-webkit-scrollbar-thumb {
 //  background: #d8d8d8;
 //}
+body {
+  &.overflow--hidden {
+    overflow-y: hidden;
+  }
+}
 html {
   -webkit-font-smoothing: antialiased;
 }

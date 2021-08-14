@@ -7,41 +7,33 @@ $(function() {
 
   isIE();
 
-  // intro 실행
-  // $(window).load( function() {
-  //   mobileReset();
-  // })
+  $('.js-model-house-button').on('click', function () {
+    $(this).parents('.js-model-house').toggleClass('is--active')
+    $('.js-model-house-bg').toggleClass('is--active')
+    $('body').toggleClass('overflow--hidden')
+  })
 
-  // $(window).scroll(function (){
-  //   var scroll = $(document).scrollTop();
-  //   if (scroll > 0) {
-  //     $('.js-header').addClass('is--blue')
-  //   }else {
-  //     $('.js-header').removeClass('is--blue')
-  //   }
-  // })
+  $('.js-header').on('mouseover', function (){
+      $('.js-header').addClass('is--show-depth')
+      $('.js-header-bg').addClass('is--active')
 
-  // 모바일 메뉴 버튼 열기/닫기
-  // $('.js-header-menu-button').on('click',function (){
-  //   $(this).parents('.js-header').toggleClass('is--open');
-  // })
+  }).on('mouseout', function () {
+    $('.js-header').removeClass('is--show-depth')
+    $('.js-header-bg').removeClass('is--active')
+  })
 
-  // header 모바일 메뉴 열기상태 초기화
-  // $(window).on('resize', function (){
-  //   mobileReset()
-  // })
-  var width = $(window).width();
+  $('.js-unit-button').on('click', function (e) {
+    e.preventDefault()
+    $('.js-unit-modal').addClass('is--active')
+    var unit = $(this).attr('data-unit')
+    $('.model-house-unit-content').removeClass('is--active')
+    $('.model-house-unit-content').eq(unit).addClass('is--active')
+  })
 
-  // $('.header-menu').on('mouseover', function (){
-  //
-  //   if(width > 991) {
-  //     // if ($(this).has('ul').length > 0) {
-  //       $('.js-header').addClass('is--show-depth')
-  //     // }
-  //   }
-  // }).on('mouseout', function () {
-  //   $('.js-header').removeClass('is--show-depth')
-  // })
+  $('.js-unit-modal-close').on('click', function () {
+    $('.js-unit-modal').removeClass('is--active')
+    $('.model-house-unit-content').removeClass('is--active')
+  })
 
   // 모델하우스 유닛 마우스 올릴때
   $('.model-house-unit__item').on('mouseover', function (){
@@ -55,16 +47,6 @@ $(function() {
     $('.model-house-unit__item').removeClass('is--active')
   })
 
-  $('.js-model-house-button').on('click', function () {
-    $('.js-model-house').addClass('is--active')
-    $('body').css('overflow-y','hidden')
-  })
-
-  $('.js-model-house-close').on('click', function () {
-    $(this).parents('.js-model-house').removeClass('is--active')
-    $('body').css('overflow-y','auto')
-    stopPlay()
-  })
 
   // // 모바일일 경우 2차메뉴 열기
   // $('.js-header-menu-item__link').on('click', function (e){

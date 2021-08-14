@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>센트레빌</title>
+  <title>위어뮤즈</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#000000">
   <meta name="msapplication-navbutton-color" content="#000000">
@@ -11,13 +11,12 @@
   <meta id="meta_og_image" property="og:image" content="assets/images/common/logo.png">
   <meta property="og:image:width" content="800">
   <meta property="og:image:height" content="627">
-  <meta name="keywords" content="센트레빌">
-<!--    <link rel="canonical" href="http://www.xn&#45;&#45;cg4bkii71bc0an7d.com/">-->
-  <meta name="application-name" content="센트레빌">
-  <meta name="msapplication-tooltip" content="센트레빌">
-  <meta id="meta_og_title" property="og:title" content="센트레빌">
-  <meta name="description" content="센트레빌">
-  <meta property="og:description" content="센트레빌">
+  <meta name="keywords" content="위어뮤즈">
+  <meta name="application-name" content="위어뮤즈">
+  <meta name="msapplication-tooltip" content="위어뮤즈">
+  <meta id="meta_og_title" property="og:title" content="위어뮤즈">
+  <meta name="description" content="위어뮤즈">
+  <meta property="og:description" content="위어뮤즈">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <script src="assets/js/vendors/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/style/style.css">
@@ -30,32 +29,307 @@
 </head>
 <body>
 <? include "header.html"; ?>
+<header class="header js-header">
+  <h1 class="header-logo">
+    <a href="/" class="header-logo__link">위어뮤즈</a>
+  </h1>
+  <div class="header-menu-img"></div>
+  <nav class="header-menu">
+    <ul class="header-menu-list">
+      <li class="header-menu__item">
+        <a href="summary.html" class="header-menu__link">사업안내</a>
+        <ul class="header-menu-depth">
+          <li class="header-menu-depth__item">
+            <a href="summary.html" class="header-menu-depth__link">사업개요</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">찾아오시는 길</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header-menu__item">
+        <a href="" class="header-menu__link">프리미엄</a>
+        <ul class="header-menu-depth">
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">어뮤즈라이프</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">프리미엄</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header-menu__item">
+        <a href="" class="header-menu__link">특장점</a>
+        <ul class="header-menu-depth">
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">시스템</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">특화설계</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">인테리어</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header-menu__item">
+        <a href="" class="header-menu__link">타입안내</a>
+        <ul class="header-menu-depth">
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">타입안내</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">호실배치도</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">E모델하우스</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header-menu__item">
+        <a href="" class="header-menu__link">고객지원</a>
+        <ul class="header-menu-depth">
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">관심고객등록</a>
+          </li>
+          <li class="header-menu-depth__item">
+            <a href="" class="header-menu-depth__link">언론보도</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <a href="tel:051-902-5000" class="header-tel"></a>
+</header>
+<div class="header-bg js-header-bg"></div>
+
 <!--   퀵메뉴-->
-<nav class="quick-menu">
+<div class="quick-menu">
   <div class="quick-menu__item">
     <span class="blind">Quick Menu</span>
     <div class="quick-menu-content">
-      <a href=""  class="quick-menu__link">
+      <a href="summary.html"  class="quick-menu__link">
         <img src="assets/images/common/quick-menu-icon1.png" alt="">
-        <strong class="quick-menu__link-text">소개영상</strong>
+        <strong class="quick-menu__link-text">사업개요</strong>
       </a>
       <a href=""  class="quick-menu__link">
         <img src="assets/images/common/quick-menu-icon2.png" alt="">
-        <strong class="quick-menu__link-text">청약안내</strong>
-      </a>
-      <a href=""  class="quick-menu__link">
-        <img src="assets/images/common/quick-menu-icon3.png" alt="">
         <strong class="quick-menu__link-text">오시는길</strong>
       </a>
       <a href=""  class="quick-menu__link">
+        <img src="assets/images/common/quick-menu-icon3.png" alt="">
+        <strong class="quick-menu__link-text">E-모델하우스</strong>
+      </a>
+      <a href=""  class="quick-menu__link">
         <img src="assets/images/common/quick-menu-icon4.png" alt="">
-        <strong class="quick-menu__link-text">카카오채널</strong>
+        <strong class="quick-menu__link-text">관심고객등록</strong>
       </a>
     </div>
   </div>
-  <a href="customer.html" class="quick-menu__item"><span class="blind">관심고객등록</span></a>
-</nav>
+  <a href="" class="quick-menu__item"><span class="blind">사전방문예약</span></a>
+</div>
 <!--   퀵메뉴-->
+<!--      모델하우스-->
+<aside class="model-house-menu js-model-house">
+  <button class="model-house-button js-model-house-button"></button>
+  <a href="tel:051-902-5000" class="model-house-tel"><span class="blind">전화번호 051-902-5000</span></a>
+  <div class="model-house-content-area">
+    <p class="model-house-menu-subject" >
+      unit plan
+    </p>
+    <p class="model-house-menu__description">
+      위어뮤즈 디광안 사이버 견본주택을 확인해 보세요!
+    </p>
+    <p class="model-house-menu__number">
+      총 <b>273</b>세대 <span class="model-house-number-line"></span> 46㎡A / 29㎡B / 29㎡C / 29㎡D / 29㎡E
+    </p>
+    <div class="model-house-text-content">
+      <img src="assets/images/common/model-house-img.png" usemap="#image-map" alt="">
+      <map name="image-map">
+        <area alt="29㎡C" title="29㎡C" href="" class="model-house-unit__button js-unit-button" data-unit="0" coords="6,57,145,184" shape="rect">
+        <area alt="29㎡E" title="29㎡E" href="" class="model-house-unit__button js-unit-button" data-unit="1"  coords="271,141,169,47" shape="rect">
+        <area alt="29㎡D" title="29㎡D" href="" class="model-house-unit__button js-unit-button" data-unit="2" coords="449,3,556,153" shape="rect">
+        <area alt="46㎡A" title="46㎡A" href="" class="model-house-unit__button js-unit-button" data-unit="3" coords="8,213,102,354" shape="rect">
+        <area alt="29㎡B" title="29㎡B" href="" class="model-house-unit__button js-unit-button" data-unit="4" coords="107,213,459,355" shape="rect">
+        <area alt="46㎡A" title="46㎡A" href="" class="model-house-unit__button js-unit-button" data-unit="3" coords="466,212,558,355" shape="rect">
+      </map>
+    </div>
+    <div class="unit-modal js-unit-modal ">
+      <div class="model-house-unit-content">
+        <div class="unit-content-text-area">
+          <span class="unit-content__name">UNIT 29㎡C</span>
+          <ul class="unit-content-list">
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                평면정보
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                세대VR
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                마감재리스트
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                전시품목
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="unit-modal-close js-unit-modal-close">
+          <img src="assets/images/common/unit-modal-close.png" alt="">
+        </button>
+      </div>
+      <div class="model-house-unit-content">
+        <div class="unit-content-text-area">
+          <span class="unit-content__name">29㎡E</span>
+          <ul class="unit-content-list">
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                평면정보
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                세대VR
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                마감재리스트
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                전시품목
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="unit-modal-close js-unit-modal-close">
+          <img src="assets/images/common/unit-modal-close.png" alt="">
+        </button>
+      </div>
+      <div class="model-house-unit-content">
+        <div class="unit-content-text-area">
+          <span class="unit-content__name">29㎡D</span>
+          <ul class="unit-content-list">
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                평면정보
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                세대VR
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                마감재리스트
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                전시품목
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="unit-modal-close js-unit-modal-close">
+          <img src="assets/images/common/unit-modal-close.png" alt="">
+        </button>
+      </div>
+      <div class="model-house-unit-content">
+        <div class="unit-content-text-area">
+          <span class="unit-content__name">46㎡A</span>
+          <ul class="unit-content-list">
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                평면정보
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                세대VR
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                마감재리스트
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                전시품목
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="unit-modal-close js-unit-modal-close">
+          <img src="assets/images/common/unit-modal-close.png" alt="">
+        </button>
+      </div>
+      <div class="model-house-unit-content">
+        <div class="unit-content-text-area">
+          <span class="unit-content__name">29㎡B</span>
+          <ul class="unit-content-list">
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                평면정보
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                세대VR
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                마감재리스트
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+            <li class="unit-content__item">
+              <a href="/" class="unit-content__link">
+                전시품목
+                <span class="unit-content__view">view ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="unit-modal-close js-unit-modal-close">
+          <img src="assets/images/common/unit-modal-close.png" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+</aside>
+<div class="model-house-bg js-model-house-bg"></div>
+<!--      모델하우스-->
 <main class="main">
   <div class="main-section-area">
     <div class="main-section main-section-visual">
@@ -63,12 +337,21 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide main-visual-swiper-slide main-visual-swiper-slide1">
             <div class="main-slide-bg"></div>
+            <div class="main-slide-text">
+              <img src="assets/images/main/main-visual-img1-text.png" alt="광안의 중심에서 누리는 어뮤즈 라이프" class="main-copyright">
+            </div>
           </div>
           <div class="swiper-slide main-visual-swiper-slide main-visual-swiper-slide2">
             <div class="main-slide-bg"></div>
+            <div class="main-slide-text">
+              <img src="assets/images/main/main-visual-img1-text.png" alt="광안의 중심에서 누리는 어뮤즈 라이프" class="main-copyright">
+            </div>
           </div>
           <div class="swiper-slide main-visual-swiper-slide main-visual-swiper-slide3">
             <div class="main-slide-bg"></div>
+            <div class="main-slide-text">
+              <img src="assets/images/main/main-visual-img1-text.png" alt="광안의 중심에서 누리는 어뮤즈 라이프" class="main-copyright">
+            </div>
           </div>
         </div>
         <div class="swiper-button-area">
@@ -86,195 +369,323 @@
       <div class="main-scroll bounce-mouse">
         <img src="assets/images/main/scroll-icon.png" alt="SCROLL">
       </div>
-<!--      우측컨텐츠-->
-      <button class="main-quick-button js-main-quick-button"></button>
-      <nav class="main-quick-menu">
-        <a href="tel:041-355-1300" class="main-quick-tel"><span class="blind">전화번호 041-355-1300</span></a>
-        <div class="quick-menu-text-area">
-          <p class="main-quick-menu-subject" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" >
-            기다렸던 <b>기회</b>
+    </div>
+<!--    유닛-->
+    <div class="main-section main-section-unit" id="unit">
+      <div class="main-section-content main-section-content-unit">
+        <div class="main-unit-content-right">
+          <h2 class="main-unit__title">WE AMUSE <i class="main-unit-line"></i></h2>
+          <div class="main-unit__title-img">
+            <img src="assets/images/main/unit-title.png" alt="" class="unit-title-img">
+          </div>
+          <p class="main-unit__description">
+            생활의 편리함을 살려 디자인한 공간의 미학
           </p>
-          <p class="main-quick-menu-subject" >
-            <span class="main-quick-menu-line" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="400"></span>
-            <span  data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="600">기대되는 <b>가치</b></span>
-          </p>
-          <p class="main-quick-menu__description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" >
-            당진에 없던 고품격 커뮤니티로 한 차원 앞서갑니다.<br>
-            새로운 라이프스타일로 주거의 품격과 자부심을 높입니다
-          </p>
-          <div class="main-quick-text-content">
-            <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="main-quick-text__item">
-              <span class="main-quick-text__icon"></span>
-              수청1지구<br>
-              중심 입지
+          <div class="main-unit-info-area">
+            <p class="unit-info-number">
+              총 <b>273</b>세대
+              <span class="unit-info-line"></span>
+            </p>
+            <div class="main-unit-button-area" >
+              <a href="#unit46a" class="main-unit__button  js-unit-button">46㎡A</a>
+              <a href="#unit29b" class="main-unit__button  js-unit-button">29㎡B</a>
+              <a href="#unit29c" class="main-unit__button  js-unit-button">29㎡C</a>
+              <a href="#unit29d" class="main-unit__button  js-unit-button">29㎡D</a>
+              <a href="#unit29e" class="main-unit__button  js-unit-button">29㎡E</a>
             </div>
-            <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000"  class="main-quick-text__item">
-              <span class="main-quick-text__icon"></span>
-              르네블루<br>
-              2차 커뮤니티
+          </div>
+          <div class="main-unit-img-area">
+            <img src="assets/images/main/unit-img-46a.png" alt="" class="main-unit-img-map js-unit-map">
+            <img src="assets/images/main/unit-img-46a.png" alt="" class="main-unit-img-map js-unit-map">
+            <img src="assets/images/main/unit-img-46a.png" alt="" class="main-unit-img-map js-unit-map">
+            <img src="assets/images/main/unit-img-46a.png" alt="" class="main-unit-img-map js-unit-map">
+            <img src="assets/images/main/unit-img-46a.png" alt="" class="main-unit-img-map js-unit-map">
+          </div>
+        </div>
+        <div id="unit46a" class="unit-content-area unit46a">
+          <div class="swiper-container unit46a-swiper-container unit-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit46-img1.png" alt="">
+                <div class="swiper-label-area">
+                  <img src="assets/images/main/unit46-img1-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit46-img2.png" alt="">
+                <div class="swiper-label-area">
+                  <img src="assets/images/main/unit46-img2-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit46-img3.png" alt="">
+                <div class="swiper-label-area">
+                  <img src="assets/images/main/unit46-img3-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit46-img4.png" alt="">
+                <div class="swiper-label-area">
+                  <img src="assets/images/main/unit46-img4-text.png" alt="">
+                </div>
+              </div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000" class="main-quick-text__item">
-              <span class="main-quick-text__icon"></span>
-              논스톱<br>
-              3 無 규제
+            <div class="unit-slide-controller">
+              <div class="swiper-label-area swiper-label-number-area">
+                <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+              </div>
+              <div class="pagination-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide-button-area" data-unit="unit46a">
+                  <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+                  <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="main-quick-navi">
-          <header class="main-quick-navi-header">
-            <img src="assets/images/main/main-quick-navi-subject.png" alt="7월 오픈 계획 총 1,460세대 59㎡, 74㎡ A/B, 84㎡ A/B, 6Type">
-<!--            <p class="main-quick-navi-subject"><b>7</b>월 오픈 계획</p>-->
-<!--            <div class="main-quick-navi-info">-->
-<!--              총 1,460세대 <span>59㎡, 74㎡ A/B, 84㎡ A/B, 6Type</span>-->
-<!--            </div>-->
-          </header>
-          <ul class="main-quick-navi-list">
-            <li class="main-navi__item">
-              <a href="summary.html" class="main-navi__link">
-                <img src="assets/images/main/main-quick-navi1.png" alt="" class="main-navi__link-icon">overview
-              </a>
-              <ul class="main-navi-depth">
-                <li class="main-navi-depth__item">
-                  <a href="summary.html" class="main-navi-depth__link">사업개요</a>
-                </li>
-                <li class="main-navi-depth__item">
-                  <a href="location.html" class="main-navi-depth__link">오시는길</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-navi__item">
-              <a href="brand.html" class="main-navi__link">
-                <img src="assets/images/main/main-quick-navi2.png" alt="" class="main-navi__link-icon">brand
-              </a>
-              <ul class="main-navi-depth">
-                <li class="main-navi-depth__item">
-                  <a href="brand.html" class="main-navi-depth__link">브랜드소개</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-navi__item">
-              <a href="brand.html" class="main-navi__link disabled">
-                <img src="assets/images/main/main-quick-navi3.png" alt="" class="main-navi__link-icon">premium
-              </a>
-              <ul class="main-navi-depth">
-                <li class="main-navi-depth__item">
-                  <a href="brand.html" class="main-navi-depth__link">프리미엄</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-navi__item">
-              <a href="brand.html" class="main-navi__link">
-                <img src="assets/images/main/main-quick-navi4.png" alt="" class="main-navi__link-icon">news
-              </a>
-              <ul class="main-navi-depth">
-                <li class="main-navi-depth__item">
-                  <a href="brand.html" class="main-navi-depth__link">홍보센터</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-navi__item">
-              <a href="brand.html" class="main-navi__link">
-                <img src="assets/images/main/main-quick-navi5.png" alt="" class="main-navi__link-icon">customer
-              </a>
-              <ul class="main-navi-depth">
-                <li class="main-navi-depth__item">
-                  <a href="brand.html" class="main-navi-depth__link">관심고객등록</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div id="unit29b" class="unit-content-area unit29b">
+          <div class="swiper-container unit29b-swiper-container unit-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29b-img1.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29b-img1-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29b-img2.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29b-img2-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29b-img3.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29b-img3-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29b-img4.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29b-img4-text.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="unit-slide-controller">
+              <div class="swiper-label-area swiper-label-number-area">
+                <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+              </div>
+              <div class="pagination-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide-button-area" data-unit="unit29b">
+                  <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+                  <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-      <!--      우측컨텐츠-->
+        <div id="unit29c"  class="unit-content-area unit29c">
+          <div class="swiper-container unit29c-swiper-container unit-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29c-img1.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29c-img1-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29c-img2.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29c-img2-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29c-img3.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29c-img3-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29c-img4.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29c-img4-text.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="unit-slide-controller">
+              <div class="swiper-label-area swiper-label-number-area">
+                <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+              </div>
+              <div class="pagination-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide-button-area" data-unit="unit29c">
+                  <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+                  <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-label-area swiper-label-number-area">
+            <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+          </div>
+        </div>
+        <div id="unit29d"  class="unit-content-area unit29d ">
+          <div class="swiper-container unit29d-swiper-container unit-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29d-img1.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29d-img1-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29d-img2.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29d-img2-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29d-img3.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29d-img3-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29d-img4.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29d-img4-text.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="unit-slide-controller">
+              <div class="swiper-label-area swiper-label-number-area">
+                <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+              </div>
+              <div class="pagination-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide-button-area" data-unit="unit29d">
+                  <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+                  <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-label-area swiper-label-number-area">
+            <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+          </div>
+        </div>
+        <div id="unit29e"  class="unit-content-area unit29e">
+          <div class="swiper-container unit29e-swiper-container unit-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29e-img1.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29e-img1-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29e-img2.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29e-img2-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29e-img3.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29e-img3-text.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/main/unit29e-img4.png" alt="">
+                <div class="swiper-label-area ">
+                  <img src="assets/images/main/unit29e-img4-text.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="unit-slide-controller">
+              <div class="swiper-label-area swiper-label-number-area">
+                <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+              </div>
+              <div class="pagination-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide-button-area" data-unit="unit29e">
+                  <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+                  <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-label-area swiper-label-number-area">
+            <span class="swiper-label__number">1</span>/<span class="swiper-label__total">1</span>
+          </div>
+        </div>
+      </div>
     </div>
+<!--    유닛-->
     <!--   프리미엄-->
     <div class="main-section main-section-community">
       <div class="main-section-content main-section-content-community">
+        <div class="premium-slide-button-area">
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="0">
+            <span class="premium-slide-button-icon"></span>
+            광안대교
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="1">
+            <span class="premium-slide-button-icon"></span>
+            초역세권
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="2">
+            <span class="premium-slide-button-icon"></span>
+            미래가치
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="3">
+            <span class="premium-slide-button-icon"></span>
+            관광지
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="4">
+            <span class="premium-slide-button-icon"></span>
+            생활가치
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="5">
+            <span class="premium-slide-button-icon"></span>
+            임대수요
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="6">
+            <span class="premium-slide-button-icon"></span>
+            분양가
+          </button>
+          <button class="premium-slide__button js-premium-slide__button" data-premium-index="7">
+            <span class="premium-slide-button-icon"></span>
+            실속평명설계
+          </button>
+        </div>
         <div class="swiper-container community-swiper-container">
-          <div class="pagination-wrap">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="community-slide-text-area">
                 <h1 class="community-slide__title">
-                  <span>Community</span>
+                  <span>Premium8</span>
                 </h1>
                 <div class="community-slide-line" ></div>
                 <p class="community-slide-text community-slide-text--img">
-                  <img src="assets/images/main/community-title-img.png" alt="">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
                 </p>
                 <div class="community-slide-text-content">
                   <div class="community-slide-text--impact">
                     <p>
-                    아이들이 행복한 단지를 짓다
+                      광안대교 프리미엄
                     </p>
                   </div>
                   <div class="community-slide-text">
                     <p>
-                      세이프 드롭오프 키즈스테이션, 키즈빌리지(아쿠아)<br>
-                      맘스키즈빌리지, 캠플레이가든
-                    </p>
-                  </div>
-                  <div class="community__link">
-                    <a href=""  class="community__link-item">view more ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="community-slide-img-area">
-                <img src="assets/images/main/community-img1.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="community-slide-text-area">
-                <h1 class="community-slide__title">
-                  <span>Community</span>
-                </h1>
-                <div class="community-slide-line" ></div>
-                <p class="community-slide-text community-slide-text--img">
-                  <img src="assets/images/main/community-title-img.png" alt="">
-                </p>
-                <div class="community-slide-text-content">
-                  <div class="community-slide-text--impact">
-                    <p>
-                    아이들이 행복한 단지를 짓다
-                    </p>
-                  </div>
-                  <div class="community-slide-text">
-                    <p>
-                      세이프 드롭오프 키즈스테이션, 키즈빌리지(아쿠아)<br>
-                      맘스키즈빌리지, 캠플레이가든
-                    </p>
-                  </div>
-                  <div class="community__link">
-                    <a href=""  class="community__link-item">view more ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="community-slide-img-area">
-                <img src="assets/images/main/community-img2.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="community-slide-text-area">
-                <h1 class="community-slide__title">
-                  <span>Community</span>
-                </h1>
-                <div class="community-slide-line" ></div>
-                <p class="community-slide-text community-slide-text--img">
-                  <img src="assets/images/main/community-title-img.png" alt="">
-                </p>
-                <div class="community-slide-text-content">
-                  <div class="community-slide-text--impact">
-                    <p>
-                    아이들이 행복한 단지를 짓다
-                    </p>
-                  </div>
-                  <div class="community-slide-text">
-                    <p>
-                      세이프 드롭오프 키즈스테이션, 키즈빌리지(아쿠아)<br>
-                      맘스키즈빌리지, 캠플레이가든
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
                     </p>
                   </div>
                   <div class="community__link">
@@ -283,9 +694,216 @@
                 </div>
               </div>
               <div class="community-slide-img-area">
-                <img src="assets/images/main/community-img3.jpg" alt="">
+                <img src="assets/images/main/premium-img1.jpg" alt="">
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img2.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img3.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img4.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img5.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img6.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img7.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="community-slide-text-area">
+                <h1 class="community-slide__title">
+                  <span>Premium8</span>
+                </h1>
+                <div class="community-slide-line" ></div>
+                <p class="community-slide-text community-slide-text--img">
+                  <img src="assets/images/main/premium-title-img.png" alt="">
+                </p>
+                <div class="community-slide-text-content">
+                  <div class="community-slide-text--impact">
+                    <p>
+                      광안대교 프리미엄
+                    </p>
+                  </div>
+                  <div class="community-slide-text">
+                    <p>
+                      생활에 즐거움을 주는 더해주는 프리미엄<br> 광안대교뷰!(일부세대)
+                    </p>
+                  </div>
+                  <div class="community__link">
+                    <a href="" class="community__link-item">view more ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="community-slide-img-area">
+                <img src="assets/images/main/premium-img8.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="pagination-wrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
           <div class="community-slide-controller">
             <div class="swiper-pagination progress"></div>
@@ -293,41 +911,22 @@
         </div>
         <div class="main-community-bg"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"></div>
       </div>
-      <div class="main-scroll bounce-mouse">
-        <img src="assets/images/main/scroll-icon.png" alt="SCROLL">
-      </div>
     </div>
     <!--   프리미엄-->
-<!--    브랜드-->
-    <div class="main-section main-section-brand">
-      <div class="main-section-content main-section-content-brand">
-        <div class="main-section-brand-top">
-          <img src="assets/images/main/brand-img1.png" class="brand-img" alt="" data-aos="fade-left" data-aos-duration="1000">
-          <div class="brand-text-area brand-text-main-area" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-            <p class="brand-text brand-text--main">
-              사람을 향한<br>
-              따뜻한 배려
-              <a href="" class="brand__link">view more ></a>
-            </p>
-          </div>
-          <div class="brand-text-area" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="600">
-            <p class="brand-text brand-text--main-sub">
-              사람 중심의 주거문화, 사람을 아름답게 하는 집 센트레빌입니다
-            </p>
-            <p class="brand-text">
-              센트레빌이 추구하는 가치의 중심에는 언제나 사람이 있습니다<br>
-              사람과 삶에 대한 배려를 누구보다 앞서 실천해온 센트레빌의 기술과 스타일은<br>
-              고객의 삶의 가치를 더욱 빛나게 합니다.
-            </p>
-          </div>
-        </div>
-        <div class="main-section-brand-bottom" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
-          <img src="assets/images/main/brand-img2.png" alt="">
-        </div>
-      </div>
-    </div>
   </div>
 </main>
 <? include "footer.html"; ?>
+<footer class="footer">
+  <div class="footer-logo-area">
+    <img src="assets/images/common/footer-logo.png" alt="시행 우리자산신탁 위탁 (주)기량 시공(주)청일건설산업,네오건설(주)">
+  </div>
+  <div class="footer-text">
+    <p class="footer-text__item">시행 : (주)한국토지신탁<span class="footer-separator">|</span>사업자번호 : 120-81-63986<span class="footer-separator">|</span>대표자 : 최윤성<span class="footer-separator">|</span>주소 : 서울시 강남구 테헤란로 137(역삼동 646), 코레이트타워</p>
+    <p class="footer-text__item">시공 : 동부건설(주)<span class="footer-separator">|</span>사업자번호 : 201-81-45685<span class="footer-separator">|</span>대표자 : 허상희<span class="footer-separator">|</span>주소 : 서울시 강남구 테헤란로 137(역삼동 646), 코레이트타워</p>
+    <p class="footer-text__item">본 웹사이트에 사용된 이미지는 소비자의 이해를 돕기 위해 제작된 것입니다</p>
+    <p class="footer-text__item footer-text__item-copyright">COPYRIGHT 2021 DONGBU CORPORATION. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
 </body>
 </html>
