@@ -23,8 +23,11 @@
     left: 0;
     display: none;
     z-index: 11;
+    opacity: 0;
+    transition: .2s;
     &.is--active {
       display: block;
+      opacity: 1;
     }
   }
   &-menu-img {
@@ -200,7 +203,7 @@
     }
     .header-menu-depth {
       padding-top: 35px;
-      height: auto;
+      height: 250px;
       opacity: 1;
     }
     .header-menu-depth__link {

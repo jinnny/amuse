@@ -13,7 +13,7 @@ $(function() {
     $('body').toggleClass('overflow--hidden')
   })
 
-  $('.js-header').on('mouseover', function (){
+  $('.js-header .header-menu').on('mouseover', function (){
       $('.js-header').addClass('is--show-depth')
       $('.js-header-bg').addClass('is--active')
 
@@ -47,46 +47,5 @@ $(function() {
     $('.model-house-unit__item').removeClass('is--active')
   })
 
-
-  // // 모바일일 경우 2차메뉴 열기
-  // $('.js-header-menu-item__link').on('click', function (e){
-  //   var width = $(window).width();
-  //   if(width <= 991) {
-  //     var parentLi = $(this).parents('li')
-  //     if (parentLi.has('.js-menu-list--depth').length > 0) {
-  //       e.preventDefault()
-  //       parentLi.toggleClass('is--open');
-  //       parentLi.find('.js-menu-list--depth').slideToggle()
-  //     }
-  //   }
-  // })
-
-  // function mobileReset() {
-  //   var width = $(window).width();
-  //   if(width > 991) {
-  //     $('.js-header').removeClass('is--open')
-  //   }
-  // }
-
-  // var main_swiper = function () {
-  //   (swiper = new Swiper('.model-house-visual', {
-  //     pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-  //     // autoplay: { delay: 5e3, disableOnInteraction: !1 },
-  //     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-  //     paginationClickable: true,
-  //     effect: 'fade'
-  //   })).on('slideChange', function () {
-  //     var e = this.activeIndex;
-  //     var t, r = document.querySelectorAll('.swiper-slide')[swiper.activeIndex],
-  //       e = document.querySelectorAll('.swiper-slide')[swiper.previousIndex];
-  //     r.querySelector('video') && ((t = r.querySelector('video')).currentTime = 0,
-  //       gsap.delayedCall(.10, function () {
-  //       t.play();
-  //     })),
-  //       e.querySelector('video') && (t = r.querySelector('video')) ? (t = r.querySelector('video')).pause() : null;
-  //   });
-  // }
-  //
-  // main_swiper()
 
 });

@@ -1,149 +1,182 @@
 .sub {
   &-top {
     &-area {
-      position: relative;
-      height: 700px;
-      width: 100%;
-      padding-top: 322px;
-      background: $white;
+      height: 860px;
+      padding-left: 80px;
       box-sizing: border-box;
+      padding-top: 109px;
+      padding-right: 80px;
+      position: relative;
     }
 
     &-bg {
       position: absolute;
-      left: 0;
+      left: 80px;
       top: 0;
       bottom: 0;
       right: 0;
-      width: 100%;
+      width: calc(100% - 160px);
       height: 100%;
-      background-size: contain;
-      z-index: 10;
-      background-image: url(../images/sub/sub-top-bg.png);
-      background-position: 100% 100%;
+      background-size: cover;
+      z-index: 7;
+      background-image: url('../images/sub/sub-top-bg.png');
+      background-position: 50% 100%;
       background-repeat: no-repeat;
-      -webkit-transform: scale(1.2, 1.2) rotate(
-                      0.002deg
-      );
-      transform: scale(1.2, 1.2) rotate(
-                      0.002deg
-      );
-      -webkit-transition: transform 4000ms ease-in-out;
-      -moz-transition: transform 4000ms ease-in-out;
-      -o-transition: transform 4000ms ease-in-out;
-      transition: transform 4000ms ease-in-out;
-      &.is--active {
-        -webkit-transform: scale(1.01, 1.01) rotate(
-                        0.002deg
-        );
-        transform: scale(1.01, 1.01) rotate(
-                        0.002deg
-        );
-      }
-  }
+    }
 
     &-title {
       position: relative;
       z-index: 11;
-      text-align: center;
-      &.is--active {
-         .sub-top__title-line {
-          width: 90px;
-        }
-        .sub-top__title-text {
-          opacity: 1;
-        }
-
-      }
-
-      .sub-top__title {
-        color: $white;
-        font-size: 74px;
-        letter-spacing: -1px;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-family: $trajan;
-        div {
-          font: inherit;
-        }
-      }
+      text-align: left;
       .sub-top__title-line {
+        display: block;
         width: 0;
         height: 1px;
-        background: #fff;
-        display: inline-block;
-        margin-right: 30px;
-        margin-left: 13%;
-        -webkit-transition: all 1s ease 1s;
-        -moz-transition: all 1s ease 1s;
-        -o-transition: all 1s ease 1s;
-        transition: all 1s ease 1s;
+        background: $blue;
+        margin: 0 0 50px 0;
+        transition: width 1s;
       }
-      .sub-top-title-bottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .sub-top__title {
+        color: $blue;
+        &-img {
+          position: absolute;
+          left: 80px;
+          top: 80px;
+        }
+        div {
+          font-size: 48px;
+          letter-spacing: -1.2px;
+          font-weight: normal;
+          font-family: TrajanPro, $korea;
+        }
       }
-      .sub-top__title-text {
-        color: $white;
+      .sub-top__sub-title {
         font-size: 20px;
-        font-weight: normal;
+        margin-top: 15px;
+        color: $blue;
+        transform: translate3d(0,50px,0);
         opacity: 0;
-        -webkit-transition: all 1s ease 1.3s;
-        -moz-transition: all 1s ease 1.3s;
-        -o-transition: all 1s ease 1.3s;
-        transition: all 1s ease 1.3s;
+        transition: 1s;
+      }
+      &.is--active {
+        .sub-top__title-line {
+          width: 89px;
+        }
+        .sub-top__sub-title {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
       }
     }
   }
+
   .sub-top {
     &-menu {
-      background: #a4937f;
+      background: $white;
       position: absolute;
-      bottom: -161px;
-      left: 360px;
-      width: 270px;
+      bottom: -89px;
+      left: 0;
+      width: 100%;
       z-index: 11;
-      height: 212px;
+      height: 89px;
       display: flex;
+      align-items: center;
       opacity: 0;
+      padding-left: 80px;
       box-sizing: border-box;
-      justify-content: flex-end;
-      flex-direction: column;
-      padding-bottom: 38px;
-      padding-left: 45px;
-      align-items: flex-start;
+      justify-content: space-between;
 
-      .sub-top-menu__icon {
-        margin-right: 2px;
-        &.small {
-          margin-right: 12px;
-        }
-      }
       &__item {
         letter-spacing: -0.5px;
-        font-size: 19px;
-        color: $white;
-        height: 40px;
+        font-size: 16px;
+        color: #000000;
 
+        & + .sub-top-menu__item {
+          &:before {
+            content: '';
+            width: 1px;
+            height: 20px;
+            background: #d9d9d9;
+            display: inline-block;
+            margin: 0 30px;
+            vertical-align: middle;
+          }
+        }
         &.is--active {
+          color: #cadbed;
           font-weight: bold;
         }
       }
-    }
-  }
-  .main-quick-menu {
-    z-index: 12;
-    left: 120px;
-    padding-bottom: 0;
-    .main-quick-menu__link {
-      color: $navy-blue;
-    }
-    .main-quick-menu-subject {
-      margin-bottom: 20px;
-    }
-    .main-quick-menu__icon {
-      margin-bottom: 24px;
+
+      .sub-menu {
+        &-home {
+          &__icon {
+            float: left;
+            width: 32px;
+            height: 48px;
+            margin-right: 20px;
+            background: url('../images/sub/icon-sub-menu.png') no-repeat center;
+          }
+          &__link {
+            display: block;
+            height: 100%;
+          }
+        }
+        .sub-menu-depth {
+          float: left;
+          width: 220px;
+          height: 48px;
+          background: url('../images/sub/sub-dropdown-arrow.png') no-repeat right 20px center / 8px;
+          padding-left: 20px;
+          font-size: 15px;
+          color: #000;
+          box-sizing: border-box;
+          position: relative;
+          line-height: 48px;
+          &:after {
+            content: '';
+            display: block;
+            height: 25px;
+            width: 1px;
+            background-color: #d9d9d9;
+            position: absolute;
+            left: 0;
+            top: 13px;
+          }
+          &-list {
+            display: none;
+          }
+          &:hover {
+            .sub-menu-depth {
+              &-list {
+                display: block;
+                position: absolute;
+                top: 47px;
+                left: 0;
+                border: 1px solid #d9d9d9;
+                border-top: 0;
+              }
+              &__item {
+                width: 218px;
+                height: 48px;
+                border-top: 1px solid #d9d9d9;
+              }
+              &__link {
+                display: block;
+                height: 100%;
+                padding-left: 14px;
+                background: #fff;
+                font-size: 15px;
+                color: #444;
+                line-height: 48px;
+                &:hover {
+                  color: $point;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
