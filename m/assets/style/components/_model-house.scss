@@ -29,27 +29,32 @@
 }
 .model-house {
   width: 100%;
-  background-color: $point;
   z-index: 111;
   color: $white;
   height: 100%;
   background-repeat: no-repeat;
-  background-image:  url("../images/common/model-house-bg.png");
-  background-position: 100% 100%;
-  background-size: contain;
+  background-image:  url("../images/main/model-house-bg-text.png");
+  background-position: 13px 95%;
+  background-color: $darkPoint;
+  background-size: 10px;
   &-header {
     position: relative;
     display: flex;
     align-items: flex-end;
+    background-repeat: no-repeat;
+    background-image:  url("../images/main/model-house-bg.png");
+    background-position: 100% -35%;
+    background-size: 50%;
     justify-content: space-between;
-    background: $white;
-    padding: 10vh 7% 7.5vw 8.5%;
+    background-color: $darkPoint;
+    padding: 14.3vw 7% 11.9vw 8.5%;
+    border-top-right-radius: 50px;
     .model-house__copyright {
       width: 35%;
     }
     .model-house-content__title {
-      text-align: right;
-      font-size: 25px;
+      text-align: left;
+      font-size: 35px;
       font-weight: normal;
       font-style: normal;
       line-height: 1.23;
@@ -58,62 +63,8 @@
       strong {
         display: block;
       }
-    }
-  }
-  &-content {
-    width: 100%;
-    padding: 20vw 7% 14vw 8.5%;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    box-sizing: border-box;
-    position: relative;
-    .model-house__title {
-      width: 56%;
-      max-width: 312px;
-      display: block;
-    }
-    .model-house__subject {
-      margin: 50px 0 18px;
-      font-size: 30px;
-      font-weight: 300;
-      line-height: 0.6;
-      letter-spacing: -1.5px;
-      color: $white;
-      text-transform: uppercase;
-    }
-    .model-house-unit {
-      padding-top: 7.5vw;
-      padding-bottom: 7.5vw;
-      &-list {
-        height: 30px;
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      &__button {
-        color: $point;
-        font-size: 11px;
-        font-weight: 300;
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        border-radius: 22.9px;
-        background-color: #eeeeee;
-        &.is--active {
-          background-color: $darkBlue;
-          color: $white;
-        }
-      }
-      &__item {
-        height: 100%;
-        box-sizing: border-box;
-        width: calc(20% - 0.5%);
-        transform: translate3d(0, 0, 0);
-        transition: transform 1s;
-
-        & + .model-house-unit__item {
-          margin-left: 1%;
-        }
+      span {
+        color: #cadbed;
       }
     }
   }
@@ -159,66 +110,6 @@
   }
 }
 
-.model-house-unit {
-  &-content {
-    position: relative;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: $white;
-    box-sizing: border-box;
-    -webkit-transition: all 0.5s ease .1s;
-    -moz-transition: all 0.5s ease .1s;
-    -o-transition: all 0.5s ease .1s;
-    transition: all 0.5s ease .1s;
-    .unit-content-img-area {
-      border-bottom-left-radius: 50px;
-      overflow: hidden;
-      width: 52.4%;
-      height: 235px;
-      display: block;
-      position: relative;
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .unit-content__item {
-      & + .unit-content__item {
-        margin-top: 2px;
-      }
-    }
-    .unit-content__link {
-      transition-property: opacity;
-      transition-timing-function: ease-in-out;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1;
-      letter-spacing: -0.9px;
-      color: $point;
-      border-bottom: 1px solid $point;
-      background-repeat: no-repeat;
-      background-position: 95% 50%;
-      display: flex;
-      align-items: center;
-      height: 27px;
-      &:hover {
-        background-image: url("../images/common/model-house-arrow.png");
-      }
-    }
-    &.is--active {
-      display: flex;
-    }
-  }
-  &.is--active {
-    display: block;
-  }
-}
 .unit-content-text-area {
   border-top-right-radius: 50px;
   overflow: hidden;
@@ -274,4 +165,219 @@
 .model-house-title-bottom {
   margin-top: 7.5vw;
   width: 66%;
+}
+
+
+.main-section-model-house {
+  box-sizing: border-box;
+  padding: 0 0 0 9.5%;
+  .model-house-swiper-container {
+    transform: translate3d(0, 40px, 0);
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .model-house-slide-text-area {
+    padding-left: 14%;
+    padding-top: 7.6%;
+    box-sizing: border-box;
+    position: relative;
+    .model-house-slide-text {
+      color: $darkPoint;
+      position: relative;
+      font-size: 13px;
+      font-weight: 500;
+      & + .model-house-slide-text {
+        margin-top: 10px;
+      }
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          .model-house-slide__item-link {
+            background-image: url("../images/main/model-house-slide-icon#{$i}.png");
+          }
+        }
+      }
+    }
+    .model-house-slide__item-link {
+      display: block;
+      line-height: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 8vw;
+    }
+    .model-house-img-text {
+      margin-top: 44px;
+      margin-bottom: 54px;
+      padding-left: 65px;
+    }
+  }
+  .model-house-slide-img-area {
+    width: 24vw;
+  }
+  .model-house-slide-content {
+    background: $white;
+    border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 27vw 10vw 20vw;
+  }
+  .model-house-slide-bottom {
+    background: $point;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .model-house-unit-info {
+      width: 50vw;
+      max-width: 357px;
+    }
+    .model-house-slide-link {
+      height: 33px;
+      line-height: 33px;
+      display: block;
+      letter-spacing: -.5px;
+      box-sizing: border-box;
+      font-size: 11px;
+      text-align: center;
+      color: $darkPoint;
+      text-transform: uppercase;
+      background: url("../images/main/model-house-view-arrow.png") no-repeat 90% 50% / 10px;
+      font-family: Montserrat, $korea;
+      padding-right: 25px;
+    }
+  }
+  .model-house-slide-img-area {
+    position: relative;
+    display: inline-block;
+  }
+  .model-house-slide-img-text {
+    position: absolute;
+    left: 59px;
+    bottom: 100px;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: $white;
+    b {
+      font-size: 30px;
+    }
+    @include respond-to(1290) {
+      left: 45px;
+    }
+  }
+
+  .model-house-slide-controller {
+    position: absolute;
+    bottom: 50%;
+    left: auto;
+    right: 0%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease 2s;
+    transition: opacity .5s ease 2s;
+    .swiper-pagination {
+      position: relative;
+      display: inline-block;
+    }
+  }
+  .pagination-wrap {
+    margin-left: 6px;
+    width: 100%;
+    position: relative;
+    margin-top: -27px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    //content: '';
+    top: 10px;
+    left: 3%;
+    width: 7vw;
+    height: 14vw;
+    background-image: url('../images/main/model-house-prev-button.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -17px;
+  }
+  .swiper-button-next {
+    left: auto;
+    right: 3%;
+    background-image: url('../images/main/model-house-next-button.png');
+  }
+  .model-house-slide-header {
+    margin-bottom: -18px;
+  }
+  .model-house-slide-button-area {
+    display: flex;
+    padding-right: 4%;
+    justify-content: flex-end;
+    .model-house-slide__button {
+      width: 17%;
+      height: 29px;
+      text-align: center;
+      background-color: #eeeeee;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 1.43;
+      letter-spacing: -0.3px;
+      color: $darkPoint;
+      border-radius: 23.1px;
+      border: solid 1px #e9e9e9;
+      &.is--active {
+        background-color: $point;
+        color: $white;
+        border-color: $point;
+      }
+      & + .model-house-slide__button {
+        margin-left: 1%;
+      }
+    }
+  }
+  .model-house-slide-text-area .model-house-slide-text {
+    transition-delay: 1s;
+  }
+  .model-house-slide-bottom {
+    .model-house-unit-info,
+    .model-house-slide-link {
+      transition-delay: 1.4s;
+    }
+  }
+  .model-house-slide-img,
+  .model-house-slide-text,
+  .model-house-unit-info,
+  .model-house-slide-link {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    -webkit-transition: all .5s ease .4s;
+    -moz-transition: all .5s ease .4s;
+    -o-transition: all .5s ease .4s;
+    transition: all .5s ease .4s;
+  }
+  .aos-animate.model-house-slide-img {
+    transition-delay: 5s;
+  }
+  .swiper-slide.swiper-slide-active {
+    .model-house-slide-img,
+    .model-house-slide-text,
+    .model-house-slide-link,
+    .model-house-unit-info {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
 }

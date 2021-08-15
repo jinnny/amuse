@@ -10,6 +10,15 @@
   justify-content: center;
   transition: background-color .2s;
   background-color: $white;
+  &.is--open .header-menu {
+    left: 0;
+    &:before {
+      display: block;
+    }
+    .header-menu-close-button {
+      display: block;
+    }
+  }
   &-logo {
     width: 30%;
     &__link {
@@ -45,91 +54,137 @@
   }
   &-menu {
     text-align: center;
-    z-index: 14;
     position: fixed;
-    width: 100%;
-    background: #fafafa;
-    top: 62px;
-    left: 0;
-    border-bottom-right-radius: 60px;
-    -webkit-border-bottom-right-radius: 60px;
-    box-shadow: 4px 3px 10px  rgba(0, 0, 0, .15);
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    transition-property: transform, opacity;
-    transition-timing-function: ease-in-out;
-    transition-duration: .5s;
-    opacity: 0;
-    &.is--active {
-      //display: block;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1;
+    height: 100%;
+    left: -80%;
+    width: 80%;
+    max-width: 500px;
+    top: 0;
+    z-index: 33;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all .5s ease;
+    &:before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      display: none;
+      z-index: 1;
     }
-   .menu-button-close {
-     position: absolute;
-     bottom: 25px;
-     right: 25px;
-     width: 30px;
-     height: 30px;
-   }
-
-   &-list {
+    &-list {
       display: flex;
       flex-direction: column;
-      padding: 9.6vw 9.6vw 14vw;
-      text-align: left;
     }
     &__item {
-      position: relative;
-      margin-bottom: 5px;
-
-      @for $i from 1 through 10 {
-        &:nth-child(#{$i}) {
-          .header-menu__link {
-            background-image: url("../images/common/menu-icon"+ $i +".png");
-            @if $i == 2 {
-              background-size: 21px, auto;
-              background-position: 0 4px;
-            }
-            @if $i == 3 {
-              background-position: 5px 0;
-            }
-            @if $i == 7 {
-              background-size: 23px, auto;
-              background-position: 0 4px;
+      border-bottom: 1px solid #d3d3d3;
+      &.is--open {
+        .header-menu__link {
+          span {
+            &:after {
+              width: 100%;
             }
           }
         }
       }
     }
     .header-menu__link {
-      font-size: 17px;
-      font-weight: 800;
-      letter-spacing: -0.8px;
-      color: $navy-blue;
+      padding: 1rem 2rem;
+      font-size: 14px;
+      letter-spacing: -0.4px;
+      color: #061941;
       box-sizing: border-box;
       position: relative;
       display: block;
-      height: 32px;
-      padding-left: 9.6vw;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: auto 25px;
-      background-image: url("../images/common/menu-icon1.png");
+      width: 100%;
+      font-weight: 600;
+      span {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          background: $navy-blue;
+          left: 0;
+          bottom: -3px;
+          -webkit-transition: all 0.5s ease .1s;
+          -moz-transition: all 0.5s ease .1s;
+          -o-transition: all 0.5s ease .1s;
+          transition: all 0.5s ease .1s;
+        }
+      }
+
     }
     .header-menu-depth {
       display: none;
-      padding-bottom: 15px;
+      background-color: #f7f7f7;
+      border-top: 1px solid #d3d3d3;
       &__link {
+        font-size: 12px;
         display: block;
-        color: #000000;
-        letter-spacing: -1px;
-        height: 22px;
-        padding-left: 9.6vw;
-        font-size: 13px;
+        line-height: 1;
+        letter-spacing: -0.36px;
+        text-align: left;
+        color: #717171;
+        padding: 1rem 2rem;
+      }
+      .header-menu-depth__item + .header-menu-depth__item {
+        border-top: 1px solid #d3d3d3;
+      }
+    }
+    &-menu {
+      background: $white;
+      position: relative;
+      z-index: 3;
+      text-align: left;
+      height: 100%;
+      .header-menu-header {
+        padding: 3rem 2rem 1.3rem;
+        position: relative;
+        background: $navy-blue;
+        .header-menu__logo {
+          width: 20vw;
+          max-width: 141px;
+        }
+        .header-menu-close-button {
+          display: none;
+          position: fixed;
+          right: 1rem;
+          top: 1rem;
+          width: 10vw;
+        }
+      }
+      .header-menu-quick {
+        background: $point;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &__link {
+          display: block;
+          padding: 13px 3.47vw;
+          & + .header-menu-quick__link {
+            position: relative;
+            &:before {
+              left: -2px;
+              top: 18px;
+              position: absolute;
+              content: '';
+              width: 1px;
+              height: 15px;
+              display: inline-block;
+              background: $white;
+            }
+          }
+        }
       }
     }
   }

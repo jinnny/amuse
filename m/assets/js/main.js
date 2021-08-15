@@ -22,17 +22,65 @@ $(function() {
       }
     }
   });
-  $('.main-swiper-slide-button.swiper-slide-button--stop').on('click', function (){
+  $('.main-swiper-slide-button.main-swiper-slide-button--stop').on('click', function (){
     $(this).addClass('is--hide')
     mainVisual.autoplay.stop()
-    $(this).siblings('.swiper-slide-button--play').removeClass('is--hide')
+    $(this).siblings('.main-swiper-slide-button--play').removeClass('is--hide')
   })
-  $('.main-swiper-slide-button.swiper-slide-button--play').on('click', function (){
+  $('.main-swiper-slide-button.main-swiper-slide-button--play').on('click', function (){
     $(this).addClass('is--hide')
-    $(this).siblings('.swiper-slide-button--stop').removeClass('is--hide')
+    $(this).siblings('.main-swiper-slide-button--stop').removeClass('is--hide')
     mainVisual.autoplay.start()
   })
   //visual
+
+
+  var interior84 = new Swiper('.interiorA-swiper-container', {
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    loop: true,
+    spaceBetween: 10,
+    loopedSlides: 2,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
+    watchSlidesVisibility: true,
+    on: {
+      init: function () {
+        var slideLength = this.slides.length - 4
+        $('.interiorA-swiper-container').find('.swiper-label__total').text('0' + slideLength);
+      },
+      slideChange: function () {
+        var slideLength = this.slides.length - 4
+        var currentNumber = this.realIndex + 1
+        if (currentNumber > slideLength) {
+          currentNumber = 0
+        }
+        $('.interiorA-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
+      }
+    },
+  });
+  var interior114 = new Swiper('.interiorB-swiper-container', {
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    loop: true,
+    spaceBetween: 10,
+    watchSlidesVisibility: true,
+    loopedSlides: 2,
+    on: {
+      init: function () {
+        var slideLength = this.slides.length - 4
+        $('.interiorB-swiper-container').find('.swiper-label__total').text('0' + slideLength);
+      },
+      slideChange: function () {
+        var slideLength = this.slides.length - 4
+        var currentNumber = this.realIndex + 1
+        if (currentNumber > slideLength) {
+          currentNumber = 0
+        }
+        $('.interiorB-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
+      }
+    },
+  });
 
   //interior
   function initTab(menuElId, index) {
@@ -52,36 +100,9 @@ $(function() {
         case 0:
           interior84.autoplay.start()
           interior114.autoplay.stop()
-          interior117.autoplay.stop()
-          interior139.autoplay.stop()
-          interior145.autoplay.stop()
           break;
         case 1:
           interior114.autoplay.start()
-          interior84.autoplay.stop()
-          interior117.autoplay.stop()
-          interior139.autoplay.stop()
-          interior145.autoplay.stop()
-          break;
-        case 2:
-          interior117.autoplay.start()
-          interior114.autoplay.stop()
-          interior84.autoplay.stop()
-          interior139.autoplay.stop()
-          interior145.autoplay.stop()
-          break;
-        case 3:
-          interior139.autoplay.start()
-          interior114.autoplay.stop()
-          interior84.autoplay.stop()
-          interior117.autoplay.stop()
-          interior145.autoplay.stop()
-          break;
-        case 4:
-          interior145.autoplay.start()
-          interior139.autoplay.stop()
-          interior117.autoplay.stop()
-          interior114.autoplay.stop()
           interior84.autoplay.stop()
           break;
         default:
@@ -100,173 +121,11 @@ $(function() {
     });
   }
 
-  var interior84 = new Swiper('.interior84-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    loop: true,
-    spaceBetween: 10,
-    loopedSlides: 2,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
-    watchSlidesVisibility: true,
-    on: {
-      init: function () {
-        var slideLength = this.slides.length - 4
-        $('.interior84-swiper-container').find('.swiper-label__total').text('0' + slideLength);
-      },
-      slideChange: function () {
-        var slideLength = this.slides.length - 4
-        var currentNumber = this.realIndex + 1
-        if (currentNumber > slideLength) {
-          currentNumber = 0
-        }
-        $('.interior84-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
-      }
-    },
-  });
-  var interior114 = new Swiper('.interior114-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    loop: true,
-    spaceBetween: 10,
-    watchSlidesVisibility: true,
-    loopedSlides: 2,
-    on: {
-      init: function () {
-        var slideLength = this.slides.length - 4
-        $('.interior114-swiper-container').find('.swiper-label__total').text('0' + slideLength);
-      },
-      slideChange: function () {
-        var slideLength = this.slides.length - 4
-        var currentNumber = this.realIndex + 1
-        if (currentNumber > slideLength) {
-          currentNumber = 0
-        }
-        $('.interior114-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
-      }
-    },
-  });
-  var interior117 = new Swiper('.interior117-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    loop: true,
-    spaceBetween: 10,
-    loopedSlides: 2,
-    watchSlidesVisibility: true,
-    on: {
-      init: function () {
-        var slideLength = this.slides.length - 4
-        $('.interior117-swiper-container').find('.swiper-label__total').text('0' + slideLength);
-      },
-      slideChange: function () {
-        var slideLength = this.slides.length - 4
-        var currentNumber = this.realIndex + 1
-        if (currentNumber > slideLength) {
-          currentNumber = 0
-        }
-        $('.interior117-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
-      }
-    },
-  });
-  var interior139 = new Swiper('.interior139-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    loop: true,
-    spaceBetween: 10,
-    loopedSlides: 2,
-    watchSlidesVisibility: true,
-    on: {
-      init: function () {
-        var slideLength = this.slides.length - 4
-        $('.interior139-swiper-container').find('.swiper-label__total').text('0' + slideLength);
-      },
-      slideChange: function () {
-        var slideLength = this.slides.length - 4
-        var currentNumber = this.realIndex + 1
-        if (currentNumber > slideLength) {
-          currentNumber = 0
-        }
-        $('.interior139-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
-      }
-    },
-  });
-  var interior145 = new Swiper('.interior145-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    loop: true,
-    spaceBetween: 10,
-    loopedSlides: 2,
-    watchSlidesVisibility: true,
-    on: {
-      init: function () {
-        var slideLength = this.slides.length - 4
-        $('.interior145-swiper-container').find('.swiper-label__total').text('0' + slideLength);
-      },
-      slideChange: function () {
-        var slideLength = this.slides.length - 4
-        var currentNumber = this.realIndex + 1
-        if (currentNumber > slideLength) {
-          currentNumber = 0
-        }
-        $('.interior145-swiper-container').find('.swiper-label__number').text('0' + currentNumber);
-      }
-    },
-  });
-
   initTab('interior', 0);
-
-  $('.main-section-interior .swiper-slide-button--stop').on('click', function (){
-    var buttonArea = $(this).parents('.swiper-slide-button-area')
-    var interiorName = Number(buttonArea.attr('data-interior'))
-    $(this).addClass('is--hide')
-    $(this).siblings('.swiper-slide-button--play').removeClass('is--hide')
-    switch (interiorName) {
-      case 84:
-        interior84.autoplay.stop()
-        break;
-      case 114:
-        interior114.autoplay.stop()
-        break;
-      case 117:
-        interior117.autoplay.stop()
-        break;
-      case 139:
-        interior139.autoplay.stop()
-        break;
-      case 145:
-        interior145.autoplay.stop()
-        break;
-    }
-  })
-  $('.main-section-interior .swiper-slide-button--play').on('click', function (){
-    var buttonArea = $(this).parents('.swiper-slide-button-area')
-    var interiorName = Number(buttonArea.attr('data-interior'))
-    $(this).addClass('is--hide')
-    $(this).siblings('.swiper-slide-button--stop').removeClass('is--hide')
-    switch (interiorName) {
-      case 84:
-        interior84.autoplay.start()
-        break;
-      case 114:
-        interior114.autoplay.start()
-        break;
-      case 117:
-        interior117.autoplay.start()
-        break;
-      case 139:
-        interior139.autoplay.start()
-        break;
-      case 145:
-        interior145.autoplay.start()
-        break;
-    }
-  })
   //interior
 
-  //premium
-  var premiumSwiper = new Swiper('.premium-swiper-container', {
+  //model-house
+  var modelHouseSwiper = new Swiper('.model-house-swiper-container', {
     autoplay: {
       delay: 3000,
       disableOnInteraction: !1
@@ -276,34 +135,44 @@ $(function() {
     loop: true,
     on: {
       init: function () {
-        $('.main-section-premium').find('.premium-slide__button').eq(0).addClass('is--active');
+        $('.main-section-model-house').find('.model-house-slide__button').eq(0).addClass('is--active');
       },
       slideChange: function () {
         var currentNumber = this.realIndex
-        $('.main-section-premium').find('.premium-slide__button').removeClass('is--active');
-        $('.main-section-premium').find('.premium-slide__button').eq(currentNumber).addClass('is--active');
+        $('.main-section-model-house').find('.model-house-slide__button').removeClass('is--active');
+        $('.main-section-model-house').find('.model-house-slide__button').eq(currentNumber).addClass('is--active');
       }
     }
   });
-  $('.premium-slide__button').on('click', function () {
-    premiumSwiper.autoplay.stop()
-    var slideIndex = premiumSwiper.realIndex
-    var current = Number($(this).attr('data-premium-index'))
+  $('.model-house-slide__button').on('click', function () {
+    modelHouseSwiper.autoplay.stop()
+    var slideIndex = modelHouseSwiper.realIndex
+    var current = Number($(this).attr('data-model-house-index'))
     if(slideIndex !== current) {
-      $('.main-section-premium').find('.premium-slide__button').removeClass('is--active');
-      $('.main-section-premium').find('.premium-slide__button').eq(current).addClass('is--active');
-      premiumSwiper.slideTo(current + 1)
-      premiumSwiper.autoplay.start()
+      $('.main-section-model-house').find('.model-house-slide__button').removeClass('is--active');
+      $('.main-section-model-house').find('.model-house-slide__button').eq(current).addClass('is--active');
+      modelHouseSwiper.slideTo(current + 1)
+      modelHouseSwiper.autoplay.start()
     }
   })
+  //model-house
+  //life
+  var lifeSwiper = new Swiper('.life-swiper-container', {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: !1
+    },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    slidesPerView: 1,
+    loop: true
+  });
+  //life
   //premium
-  //unit
-  var unitSwiper = new Swiper('.unit-swiper-container', {
+  var premiumSwiper = new Swiper('.premium-swiper-container', {
     pagination: { el: '.swiper-pagination.progress', type: 'progressbar', clickable: !1 },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
     slidesPerView: 1.2,
-    loop: true,
-    spaceBetween: 21,
+    spaceBetween: 6,
     autoHeight: true,
     // on: {
     //   init: function () {
@@ -316,7 +185,7 @@ $(function() {
     //   }
     // }
   });
-  //unit
+  //premium
 
 
   AOS.init({

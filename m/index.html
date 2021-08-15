@@ -28,7 +28,6 @@
 </head>
 <body>
 <? include "_header.html"; ?>
-<? include "_quick-menu.html"; ?>
 <header class="header js-header">
   <button class="header-menu-button js-header-menu-button">
     <img src="assets/images/common/header-menu-icon.png" alt="">
@@ -37,116 +36,86 @@
     <a href="index.html" class="header-logo__link"><img src="assets/images/common/logo.png" alt="위어뮤즈"></a>
   </h1>
   <a href="tel:051-902-5000" class="header-tel"><img src="assets/images/common/header-tel-icon.png" alt=""></a>
+  <nav class="header-menu">
+    <div class="header-menu-menu">
+      <header class="header-menu-header">
+        <img src="assets/images/common/logo-white.png" alt="위어뮤즈" class="header-menu__logo">
+        <button class="header-menu-close-button js-header-menu-close-button">
+          <img src="assets/images/common/icon-close.png" alt="닫기">
+        </button>
+      </header>
+      <ul class="header-menu-list">
+        <li class="header-menu__item">
+          <a href="summary.html" class="header-menu__link js-header-menu-item__link">
+            <span>사업안내</span>
+          </a>
+          <ul class="header-menu-depth">
+            <li class="header-menu-depth__item">
+              <a href="summary.html" class="header-menu-depth__link">사업개요</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">찾아오시는 길</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link js-header-menu-item__link"><span>프리미엄</span></a>
+          <ul class="header-menu-depth">
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">어뮤즈라이프</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">프리미엄</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link js-header-menu-item__link"><span>특장점</span></a>
+          <ul class="header-menu-depth">
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">시스템</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">특화설계</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">인테리어</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link js-header-menu-item__link"><span>타입안내</span></a>
+          <ul class="header-menu-depth">
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">타입안내</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">호실배치도</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">E모델하우스</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link js-header-menu-item__link"><span>고객지원</span></a>
+          <ul class="header-menu-depth">
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">관심고객등록</a>
+            </li>
+            <li class="header-menu-depth__item">
+              <a href="" class="header-menu-depth__link">언론보도</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="header-menu-quick">
+        <a href="" class="header-menu-quick__link"><img src="assets/images/common/header-menu-quick1.png" alt=""></a>
+        <a href="" class="header-menu-quick__link"><img src="assets/images/common/header-menu-quick2.png" alt=""></a>
+      </div>
+    </div>
+  </nav>
 </header>
-<nav class="header-menu js-header-menu">
-  <button class="menu-button-close js-menu-button-close"><img src="assets/images/common/menu-close-icon.png" alt="메뉴닫기"></button>
-  <ul class="header-menu-list">
-    <li class="header-menu__item">
-      <a href="index.html" class="header-menu__link">HOME</a>
-    </li>
-    <li class="header-menu__item">
-      <a href="index.html#modelHouse" class="header-menu__link">사이버모델하우스</a>
-    </li>
-    <li class="header-menu__item">
-      <a href="summary.html" class="header-menu__link">사업안내</a>
-      <ul class="header-menu-depth">
-        <li class="header-menu-depth__item">
-          <a href="summary.html" class="header-menu-depth__link">사업개요</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="location-sketch.html" class="header-menu-depth__link">입지스케치</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="premium.html" class="header-menu-depth__link">프리미엄</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="brand.html" class="header-menu-depth__link">브랜드 소개</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="location.html" class="header-menu-depth__link">오시는 길</a>
-        </li>
-      </ul>
-    </li>
-    <li class="header-menu__item">
-      <a href="mh-sketch.html" class="header-menu__link">단지안내</a>
-      <ul class="header-menu-depth">
-        <li class="header-menu-depth__item">
-          <a href="mh-sketch.html" class="header-menu-depth__link">모델하우스 스케치</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="dong-location.html" class="header-menu-depth__link">단지/동호수 배치도</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="instructor.html" class="header-menu-depth__link">조경안내</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="community.html" class="header-menu-depth__link">커뮤니티</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="aiq.html" class="header-menu-depth__link">AIQ HOME 시스템</a>
-        </li>
-      </ul>
-    </li>
-    <li class="header-menu__item">
-      <a href="element.html" class="header-menu__link">세대안내</a>
-      <ul class="header-menu-depth">
-        <li class="header-menu-depth__item">
-          <a href="element.html" class="header-menu-depth__link">마감재리스트</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="display.html" class="header-menu-depth__link">전시품목리스트</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="unit-sketch.html" class="header-menu-depth__link">유니트스케치</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="e-mh.html" class="header-menu-depth__link">e-모델하우스</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="interior.html" class="header-menu-depth__link">인테리어</a>
-        </li>
-      </ul>
-    </li>
-    <li class="header-menu__item">
-      <a href="calendar.html" class="header-menu__link">분양안내</a>
-      <ul class="header-menu-depth">
-        <li class="header-menu-depth__item">
-          <a href="calendar.html" class="header-menu-depth__link">분양캘린더</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="checklist.html" class="header-menu-depth__link">청약체크리스트</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="info.html" class="header-menu-depth__link">청약안내</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="notice.html" class="header-menu-depth__link">입주자 모집공고</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="javascript:alert('준비중입니다.');" class="header-menu-depth__link">당첨자 서류제출</a>
-        </li>
-      </ul>
-    </li>
-    <li class="header-menu__item">
-      <a href="news.html" class="header-menu__link">홍보센터</a>
-      <ul class="header-menu-depth">
-        <li class="header-menu-depth__item">
-          <a href="news.html" class="header-menu-depth__link">언론보도</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="tv.html" class="header-menu-depth__link">더샵TV</a>
-        </li>
-        <li class="header-menu-depth__item">
-          <a href="event.html" class="header-menu-depth__link">이벤트</a>
-        </li>
-      </ul>
-    </li>
-    <li class="header-menu__item">
-      <a href="customer.html" class="header-menu__link">관심고객등록</a>
-    </li>
-  </ul>
-</nav>
-
 <main class="main">
   <div class="main-section main-section-visual">
     <div class="swiper-container main-visual">
@@ -154,271 +123,181 @@
         <div class="swiper-slide main-visual-swiper-slide main-visual-swiper-slide1">
           <div class="main-slide-bg"></div>
           <div class="main-slide-text">
-            <img src="assets/images/main/main-visual1-text.png" alt="기대를 넘어서는 특별한 시작" class="main-copyright">
-            <p class="main-slide-text--sub"><img src="assets/images/main/main-visual-logo.png" alt="THE SHARP 광양베이센트"></p>
+            <img src="assets/images/main/main-visual1-text.png" alt="광안의 중심에서 누리는 어뮤즈 라이프" class="main-copyright">
           </div>
         </div>
         <div class="swiper-slide main-visual-swiper-slide main-visual-swiper-slide2">
           <div class="main-slide-bg"></div>
           <div class="main-slide-text">
-            <img src="assets/images/main/main-visual2-text.png" alt="기대를 넘어서는 특별한 시작" class="main-copyright">
-            <p class="main-slide-text--sub"><img src="assets/images/main/main-visual-logo.png" alt="THE SHARP 광양베이센트"></p>
+            <img src="assets/images/main/main-visual2-text.png" alt="광안의 중심에서 누리는 어뮤즈 라이프" class="main-copyright">
           </div>
         </div>
       </div>
-      <div class="swiper-button-area">
-        <div class="swiper-number-area">
-          <span class="swiper-label__number">01</span>
-          <span class="swiper-label__number">02</span>
+      <div class="main-swiper-side-content">
+        <a href="" class="main-swiper-side__link"><img src="assets/images/common/quick-menu-customer.png" alt="관심고객등록"></a>
+        <a href="" class="main-swiper-side__link"><img src="assets/images/common/quick-menu-media.png" alt="홍보영상"></a>
+      </div>
+      <div class="main-swiper-bottom-content">
+        <div class="main-swiper-quick-menu">
+          <a href="" class="main-quick-menu__link"><img src="assets/images/main/quick-menu-summary.png" alt="사업개요"></a>
+          <a href="" class="main-quick-menu__link"><img src="assets/images/main/quick-menu-map.png" alt="오시는길"></a>
         </div>
-        <div class="swiper-pagination progress button-el"></div>
-        <div class="pagination-wrap button-el">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="main-swiper-slide-button-area">
-          <button class="main-swiper-slide-button main-swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-          <button class="main-swiper-slide-button main-swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+        <div class="swiper-button-area">
+          <div class="swiper-number-area">
+            <span class="swiper-label__number">01</span>
+            <span class="swiper-label__number">02</span>
+          </div>
+          <div class="swiper-pagination progress button-el"></div>
+          <div class="pagination-wrap button-el">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="main-swiper-slide-button-area">
+            <button class="main-swiper-slide-button main-swiper-slide-button--stop"><span class="blind">일시정지</span></button>
+            <button class="main-swiper-slide-button main-swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="model-house-button-area" data-aos="fade-left" data-aos-duration="1000">
-      <button class="model-house-button js-model-house-button"></button>
+    <div class="main-visual-side">
+      <a href="#modelHouse" class="main-side__link">
+        <img src="assets/images/common/model-house-button.png" alt="CYBER MODEL HOUSE">
+      </a>
+      <a href="" class="main-side__link">
+        <img src="assets/images/common/top-side-item.png" alt="사전방문예약">
+      </a>
+      <span class="main-side-mouse"></span>
     </div>
-  </div>
-  <div class="side-text right" data-aos="fade-right" data-aos-delay="200" >
-    <img src="assets/images/main/main-text.png" alt="당신이 기억하게될 설레임">
   </div>
   <!--    모델하우스-->
   <div class="model-house" id="modelHouse">
     <header class="model-house-header">
-      <img src="assets/images/common/model-house-copyright.png" alt="기대를 넘어서는 특별한 시작" class="model-house__copyright">
-      <h1 class="model-house-content__title">사이버<strong>모델하우스</strong>관람하기</h1>
+      <h1 class="model-house-content__title">사이버<strong>모델하우스</strong><span>관람하기</span></h1>
     </header>
-    <article class="model-house-content">
-      <img src="assets/images/common/model-house-title.png" alt="" class="model-house__title">
-      <div class="model-house-unit">
-        <ul class="model-house-unit-list">
-          <li class="model-house-unit__item">
-            <button class="model-house-unit__button is--active js-model-house-unit__button" data-unit="0">84㎡</button>
-          </li>
-          <li class="model-house-unit__item">
-            <button class="model-house-unit__button js-model-house-unit__button" data-unit="1">114㎡</button>
-          </li>
-          <li class="model-house-unit__item">
-            <button class="model-house-unit__button js-model-house-unit__button" data-unit="2">117㎡</button>
-          </li>
-          <li class="model-house-unit__item">
-            <button class="model-house-unit__button js-model-house-unit__button" data-unit="3">139㎡</button>
-          </li>
-          <li class="model-house-unit__item">
-            <button class="model-house-unit__button js-model-house-unit__button" data-unit="4">145㎡</button>
-          </li>
-        </ul>
-      </div>
-      <div class="model-house-unit-content is--active">
-        <div class="unit-content-img-area">
-          <img src="assets/images/common/model-house-unit84.png" alt="">
-        </div>
-        <div class="unit-content-text-area">
-          <span class="unit-content__name">84㎡</span>
-          <ul class="unit-content-list">
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">평면정보</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 살펴보기(VR)</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 안내영상</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">전시품목 및 유상옵션</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">마감재리스트</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="model-house-unit-content">
-        <div class="unit-content-img-area">
-          <img src="assets/images/common/model-house-unit114.png" alt="">
-        </div>
-        <div class="unit-content-text-area">
-          <span class="unit-content__name">114㎡</span>
-          <ul class="unit-content-list">
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">평면정보</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 살펴보기(VR)</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 안내영상</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">전시품목 및 유상옵션</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">마감재리스트</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="model-house-unit-content">
-        <div class="unit-content-img-area">
-          <img src="assets/images/common/model-house-unit117.png" alt="">
-        </div>
-        <div class="unit-content-text-area">
-          <span class="unit-content__name">117㎡</span>
-          <ul class="unit-content-list">
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">평면정보</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 살펴보기(VR)</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 안내영상</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">전시품목 및 유상옵션</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">마감재리스트</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="model-house-unit-content">
-        <div class="unit-content-img-area">
-          <img src="assets/images/common/model-house-unit139.png" alt="">
-        </div>
-        <div class="unit-content-text-area">
-          <span class="unit-content__name">139㎡</span>
-          <ul class="unit-content-list">
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">평면정보</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 살펴보기(VR)</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">유니트 안내영상</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">전시품목 및 유상옵션</a>
-            </li>
-            <li class="unit-content__item">
-              <a href="/" class="unit-content__link">마감재리스트</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="model-house-unit-content">
-          <div class="unit-content-img-area">
-            <img src="assets/images/common/model-house-unit145.png" alt="">
-          </div>
-          <div class="unit-content-text-area">
-            <span class="unit-content__name">145㎡</span>
-            <ul class="unit-content-list">
-              <li class="unit-content__item">
-                <a href="/" class="unit-content__link">평면정보</a>
-              </li>
-              <li class="unit-content__item">
-                <a href="/" class="unit-content__link">유니트 살펴보기(VR)</a>
-              </li>
-              <li class="unit-content__item">
-                <a href="/" class="unit-content__link">유니트 안내영상</a>
-              </li>
-              <li class="unit-content__item">
-                <a href="/" class="unit-content__link">전시품목 및 유상옵션</a>
-              </li>
-              <li class="unit-content__item">
-                <a href="/" class="unit-content__link">마감재리스트</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      <div class="model-house-title-bottom">
-        <img src="assets/images/main/model-house-title-unit.png" alt="GRAND OPEN">
-      </div>
-    </article>
-  </div>
-  <!--    모델하우스-->
-  <!--   프리미엄-->
-  <article class="main-section main-section-premium" data-aos="zoom-in" data-aos-duration="1000">
-    <div class="main-section-content main-section-content-premium">
-      <header class="premium-slide-header">
-        <h2 class="main-premium__title main-common__title">PREMIUM4</h2>
-        <div class="premium-slide-button-area">
-          <button class="premium-slide__button" data-premium-index="0">brand</button>
-          <button class="premium-slide__button" data-premium-index="1">new life</button>
-          <button class="premium-slide__button" data-premium-index="2">eco life</button>
-          <button class="premium-slide__button" data-premium-index="3">high speed</button>
+    <div class="main-section-content main-section-model-house">
+      <header class="model-house-slide-header">
+        <div class="model-house-slide-button-area">
+          <button class="model-house-slide__button" data-model-house-index="0">46㎡ A</button>
+          <button class="model-house-slide__button" data-model-house-index="1">29㎡ B</button>
+          <button class="model-house-slide__button" data-model-house-index="2">29㎡ c</button>
+          <button class="model-house-slide__button" data-model-house-index="3">29㎡ D</button>
+          <button class="model-house-slide__button" data-model-house-index="4">29㎡ E</button>
         </div>
       </header>
-      <div class="swiper-container premium-swiper-container">
+      <div class="swiper-container model-house-swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="premium-slide-img-area">
-              <img src="assets/images/main/premium-img1.png" alt="">
+            <div class="model-house-slide-content">
+              <div class="model-house-slide-img-area">
+                <img src="assets/images/main/model-house-unit46.png" alt="" class="model-house-slide-img">
+              </div>
+              <ul class="model-house-slide-text-area">
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">평면정보</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">인테리어</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">VR영상</a>
+                </li>
+              </ul>
             </div>
-            <div class="premium-slide-text-area">
-              <p class="premium-slide__title">첫번째 프리미엄 더샵</p>
-              <div class="premium-slide-line"></div>
-              <p class="premium-slide-text">
-                <b>BRAND PREMIUM</b>
-                여순광에서 처음 만나는<br> NO.1 주거브랜드 더샵
-              </p>
-              <a href="" class="premium-slide-link">view more</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="premium-slide-img-area">
-              <img src="assets/images/main/premium-img2.png" alt="">
-            </div>
-            <div class="premium-slide-text-area">
-              <p class="premium-slide__title">하루가 더 특별해지는 공간</p>
-              <div class="premium-slide-line"></div>
-              <p class="premium-slide-text">
-                <b>NEW LIFE PREMIUM</b>
-                더샵 자부심이 느껴지는<br> 본질적이고 품격 있는 디자인
-              </p>
-              <a href="" class="premium-slide-link">view more</a>
+            <div class="model-house-slide-bottom">
+              <img src="assets/images/main/model-house-unit-info.png" alt="총 273실 46㎡ A / 29㎡ B, C, D, E" class="model-house-unit-info">
+              <a href="" class="model-house-slide-link">view more</a>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="premium-slide-img-area">
-              <img src="assets/images/main/premium-img3.png" alt="">
+            <div class="model-house-slide-content">
+              <div class="model-house-slide-img-area">
+                <img src="assets/images/main/model-house-unit29b.png" alt="" class="model-house-slide-img">
+              </div>
+              <ul class="model-house-slide-text-area">
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">평면정보</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">인테리어</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">VR영상</a>
+                </li>
+              </ul>
             </div>
-            <div class="premium-slide-text-area">
-              <p class="premium-slide__title">쾌적하고 청정한 새로움</p>
-              <div class="premium-slide-line"></div>
-              <p class="premium-slide-text">
-                <b>ECO LIFE PREMIUM</b>
-                삶을 더 특별하게 만드는<br> 쾌적한 에코라이프
-              </p>
-              <a href="" class="premium-slide-link">view more</a>
+            <div class="model-house-slide-bottom">
+              <img src="assets/images/main/model-house-unit-info.png" alt="총 273실 46㎡ A / 29㎡ B, C, D, E" class="model-house-unit-info">
+              <a href="" class="model-house-slide-link">view more</a>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="premium-slide-img-area">
-              <img src="assets/images/main/premium-img4.png" alt="">
+            <div class="model-house-slide-content">
+              <div class="model-house-slide-img-area">
+                <img src="assets/images/main/model-house-unit29c.png" alt="" class="model-house-slide-img">
+              </div>
+              <ul class="model-house-slide-text-area">
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">평면정보</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">인테리어</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">VR영상</a>
+                </li>
+              </ul>
             </div>
-            <div class="premium-slide-text-area">
-              <p class="premium-slide__title">더 빠르게, 더 편하게</p>
-              <div class="premium-slide-line"></div>
-              <p class="premium-slide-text">
-                <b>HIGH SPEED PREMIUM</b>
-                일상에 여유를 더해주는<br> 사통팔달 쾌속교통망
-              </p>
-              <a href="" class="premium-slide-link">view more</a>
+            <div class="model-house-slide-bottom">
+              <img src="assets/images/main/model-house-unit-info.png" alt="총 273실 46㎡ A / 29㎡ B, C, D, E" class="model-house-unit-info">
+              <a href="" class="model-house-slide-link">view more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="model-house-slide-content">
+              <div class="model-house-slide-img-area">
+                <img src="assets/images/main/model-house-unit29d.png" alt="" class="model-house-slide-img">
+              </div>
+              <ul class="model-house-slide-text-area">
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">평면정보</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">인테리어</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">VR영상</a>
+                </li>
+              </ul>
+            </div>
+            <div class="model-house-slide-bottom">
+              <img src="assets/images/main/model-house-unit-info.png" alt="총 273실 46㎡ A / 29㎡ B, C, D, E" class="model-house-unit-info">
+              <a href="" class="model-house-slide-link">view more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="model-house-slide-content">
+              <div class="model-house-slide-img-area">
+                <img src="assets/images/main/model-house-unit29e.png" alt="" class="model-house-slide-img">
+              </div>
+              <ul class="model-house-slide-text-area">
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">평면정보</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">인테리어</a>
+                </li>
+                <li class="model-house-slide-text">
+                  <a href="" class="model-house-slide__item-link">VR영상</a>
+                </li>
+              </ul>
+            </div>
+            <div class="model-house-slide-bottom">
+              <img src="assets/images/main/model-house-unit-info.png" alt="총 273실 46㎡ A / 29㎡ B, C, D, E" class="model-house-unit-info">
+              <a href="" class="model-house-slide-link">view more</a>
             </div>
           </div>
         </div>
-        <div class="premium-slide-controller">
+        <div class="model-house-slide-controller">
           <div class="pagination-wrap">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -426,368 +305,308 @@
         </div>
       </div>
     </div>
-  </article>
-  <!--   프리미엄-->
-  <!--  유닛-->
-  <div class="main-section main-section-unit" >
-    <header class="premium-slide-header" data-aos="fade-up">
-      <h2 class="main-premium__title main-common__title">UNIT PLAN</h2>
-    </header>
-    <div class="side-text" data-aos="fade-right" data-aos-delay="200" >
-      <img src="assets/images/main/main-unit-text.png" alt="기 대 를 넘어서는 특 별 한 시 작">
+  </div>
+  <!--    모델하우스-->
+  <!--    about-->
+  <div class="main-about">
+    <h2 class="main-about__title" data-aos="fade-up" >ABOUT</h2>
+    <img data-aos="fade-up" data-aos-delay="200" src="assets/images/main/main-about-sub-title.png" alt="일상이 즐거운 주거공간, we(우리) + amuse(즐겁게하다)" class="main-about-sub-title-img">
+    <div class="main-about-text-area" data-aos="fade-up" data-aos-delay="400">
+      <div class="main-about-line"></div>
+      <p class="main-about__text">
+        WE의 ‘우리’와 AMUSE의 ‘즐겁게하다’가 결합되어<br>
+        우리가 즐거워지는 삶의 공간이라는 의미를 담고 있습니다.<br>
+        위어뮤즈는 행복하고 즐거운 일이 끊임없이 생기는 살기 좋은 일상의 주거공간이 되겠습니다.
+      </p>
     </div>
-    <div class="swiper-container unit-swiper-container" data-aos="fade-up"  data-aos-delay="400" >
+  </div>
+  <!--  about-->
+  <!--  life-->
+  <article class="main-life">
+    <header class="main-life-header">
+      <div class="main-life-header-text" data-aos="fade-right" >
+        <p class="main-life__title-sub">광안의 중심에서 누리는</p>
+        <h2 class="main-life__title">AMUSE LIFE</h2>
+        <a href="" class="main-life__view-more"><img src="assets/images/main/life-view-more.png" alt="view more"></a>
+      </div>
+      <div class="main-life-header-link" data-aos="fade-left" data-aos-delay="200" >
+        <a href="" class="main-life__link"><img src="assets/images/main/life-icon1.png" alt=""></a>
+        <a href="" class="main-life__link"><img src="assets/images/main/life-icon2.png" alt=""></a>
+      </div>
+    </header>
+    <div class="swiper-container life-swiper-container" data-aos="fade-up"  data-aos-delay="400" >
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="" class="swiper-slide-unit__link">
-            <img src="assets/images/main/unit-view-more.png" alt="View More">
-          </a>
-          <div class="unit-img-area">
-            <img src="assets/images/main/unit84-img.png" alt="">
-          </div>
-          <div class="swiper-slide-unit-text">
-            <strong class="swiper-slide-unit__type">84㎡</strong>
-            <span class="swiper-slide-unit__content">총 727세대</span>
+          <img src="assets/images/main/life-img1.png" alt="오션어뮤즈, 보이는 즐거움, 사는 즐거움! 내집에서 즐기는 광안대교뷰(일부세대)">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/main/life-img2.png" alt="라이프어뮤즈, 생활이 즐거워지는 원스톱 인프라금련산역 도보 3분! 다양한 버스노선과 쾌적한 인프라">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/main/life-img3.png" alt="힐링어뮤즈, 광안리해변부터 금련산까지 오션세권+숲세권의 쾌적함">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/main/life-img4.png" alt="스마트어뮤즈, 위어뮤즈 디광안만의 스마트시스템 적용!">
+        </div>
+      </div>
+      <div class="life-slide-controller common-slide-controller">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </article>
+  <!--  life-->
+
+  <!--  프리미엄-->
+  <div class="main-section main-section-premium" >
+    <header class="premium-slide-header" data-aos="fade-up">
+      <h2 class="main-premium__title main-common__title">PREMIUM</h2>
+      <p class="main-premium__description">
+        <b>광안대교뷰</b>의 가치에<br><b>역세권</b> 프리미엄을<br>더하다
+      </p>
+      <a href="" class="main-premium__view-more">
+        <img src="assets/images/main/premium-view-more.png" alt="view more">
+      </a>
+    </header>
+    <div class="swiper-container premium-swiper-container" data-aos="fade-up"  data-aos-delay="400" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">광안대교<b>프리미엄</b></p>
+              <p class="premium__description">
+                생활에 즐거움을 더해주는<br>
+                프리미엄 광안대교뷰!(일부세대)
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img1.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img1-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">01</b>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <a href="" class="swiper-slide-unit__link">
-            <img src="assets/images/main/unit-view-more.png" alt="View More">
-          </a>
-          <div class="unit-img-area">
-            <img src="assets/images/main/unit114-img.png" alt="">
-          </div>
-          <div class="swiper-slide-unit-text">
-            <strong class="swiper-slide-unit__type">114㎡</strong>
-            <span class="swiper-slide-unit__content">총 727세대</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <a href="" class="swiper-slide-unit__link">
-            <img src="assets/images/main/unit-view-more.png" alt="View More">
-          </a>
-          <div class="unit-img-area">
-            <img src="assets/images/main/unit117-img.png" alt="">
-          </div>
-          <div class="swiper-slide-unit-text">
-            <strong class="swiper-slide-unit__type">117㎡</strong>
-            <span class="swiper-slide-unit__content">총 727세대</span>
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">생활가치<b>프리미엄</b></p>
+              <p class="premium__description">
+                종합병원, 관공서 등<br>
+                생활편의시설 인접!
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img2.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img2-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">02</b>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <a href="" class="swiper-slide-unit__link">
-            <img src="assets/images/main/unit-view-more.png" alt="View More">
-          </a>
-          <div class="unit-img-area">
-            <img src="assets/images/main/unit139-img.png" alt="">
-          </div>
-          <div class="swiper-slide-unit-text">
-            <strong class="swiper-slide-unit__type">139㎡</strong>
-            <span class="swiper-slide-unit__content">총 727세대</span>
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">초역세권<b>프리미엄</b></p>
+              <p class="premium__description">
+                금련산역 도보 2분!<br>
+                다양한 버스노선 인접
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img3.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img3-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">03</b>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <a href="" class="swiper-slide-unit__link">
-            <img src="assets/images/main/unit-view-more.png" alt="View More">
-          </a>
-          <div class="unit-img-area">
-            <img src="assets/images/main/unit145-img.png" alt="">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">임대수요<b>프리미엄</b></p>
+              <p class="premium__description">
+                경성대, 부경대 대학가 및 <br>센텀시티 직장인 수요 풍부
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img4.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img4-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">04</b>
+            </div>
           </div>
-          <div class="swiper-slide-unit-text">
-            <strong class="swiper-slide-unit__type">145㎡</strong>
-            <span class="swiper-slide-unit__content">총 727세대</span>
+        </div>
+        <div class="swiper-slide">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">미래가치<b>프리미엄</b></p>
+              <p class="premium__description">
+                인근 재개발 재건축 브랜드타운<br> 프리미엄 수혜지역
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img5.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img5-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">05</b>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">분양가<b>프리미엄</b></p>
+              <p class="premium__description">
+                광안대교 조망 상품 중 가장<br> 저렴한 분양가(일부세대)
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img6.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img6-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">06</b>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">관광지<b>프리미엄</b></p>
+              <p class="premium__description">
+                여행같은 일상을 누리는<br> 광안리 생활권!
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img7.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img7-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">07</b>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="premium-img-area">
+            <div class="premium-top-area">
+              <p class="premium__subject">실속평면설계<b>프리미엄</b></p>
+              <p class="premium__description">
+                1인가구부터 신혼부부까지<br> 전세대를 만족하는 특화설계
+              </p>
+            </div>
+            <img src="assets/images/main/premium-img8.png" alt="">
+            <div class="premium-bottom-area">
+              <img src="assets/images/main/premium-img8-icon.png" alt="" class="premium-bottom__icon">
+              <b class="premium-bottom__number">08</b>
+            </div>
           </div>
         </div>
       </div>
-      <div class="unit-slide-controller">
-        <div class="swiper-pagination progress"></div>
+      <div class="premium-slide-controller">
         <div class="pagination-wrap">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+        <div class="swiper-pagination progress"></div>
       </div>
     </div>
   </div>
-  <!--  유닛-->
   <!--  인테리어-->
   <div class="main-section main-section-interior" id="interior">
     <div class="main-section-content main-section-content-interior">
       <header class="main-interior-header">
-        <h2 class="main-interior__title">Interior</h2>
-        <p class="main-interior__description">
-          집이 가져야 할 본질적 가치와<br>
-          그 안에 담길 라이프 스타일을<br>
-          더 깊이 고민합니다</p>
+        <h2 class="main-interior__title">Interior<b>A-Type</b></h2>
       </header>
-      <div class="main-interior-button-area button-area0" >
-        <a href="#interior84" class="main-interior__button main-interior__button-84">84㎡</a>
+      <div class="main-interior-button-area">
+        <a href="#aType" class="main-interior__button">A-Type</a>
+        <a href="#bType" class="main-interior__button">B-TYPE</a>
       </div>
-      <div id="interior84" class="interior-content-area interior84">
-        <div class="swiper-container interior84-swiper-container interior-swiper-container">
+      <div id="aType" class="interior-content-area aType">
+        <div class="swiper-container interiorA-swiper-container interior-swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-label-area">
-                <img src="assets/images/main/interior84-img1-text.png" alt="">
+                <img src="assets/images/main/interiora-img1-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior84-img1.png" alt="">
+              <img src="assets/images/main/interiora-img1.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area">
-                <img src="assets/images/main/interior84-img2-text.png" alt="">
+                <img src="assets/images/main/interiora-img2-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior84-img2.png" alt="">
+              <img src="assets/images/main/interiora-img2.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area">
-                <img src="assets/images/main/interior84-img3-text.png" alt="">
+                <img src="assets/images/main/interiora-img3-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior84-img3.png" alt="">
+              <img src="assets/images/main/interiora-img3.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area">
-                <img src="assets/images/main/interior84-img4-text.png" alt="">
+                <img src="assets/images/main/interiora-img4-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior84-img4.png" alt="">
+              <img src="assets/images/main/interiora-img4.png" alt="">
             </div>
           </div>
           <div class="interior-slide-controller">
-            <div class="swiper-label-area swiper-label-number-area">
-              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
-            </div>
-            <div class="swiper-slide-button-area" data-interior="84">
-              <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-              <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
-            </div>
-            <div class="swiper-pagination progress"></div>
-            <div class="pagination-wrap">
+            <div class="common-slide-controller pagination-wrap">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-label-area swiper-label-number-area">
+              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-interior-button-area main-interior-button-area-114 button-area1">
-        <a href="#interior114" class="main-interior__button main-interior__button-114">114㎡</a>
-      </div>
-      <div id="interior114" class="interior-content-area interior114">
-        <div class="swiper-container interior114-swiper-container interior-swiper-container">
+      <div id="bType" class="interior-content-area bType">
+        <div class="swiper-container interiorB-swiper-container interior-swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-label-area ">
-                <img src="assets/images/main/interior114-img1-text.png" alt="">
+                <img src="assets/images/main/interiorb-img1-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior114-img1.png" alt="">
+              <img src="assets/images/main/interiorb-img1.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area ">
-                <img src="assets/images/main/interior114-img2-text.png" alt="">
+                <img src="assets/images/main/interiorb-img2-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior114-img2.png" alt="">
+              <img src="assets/images/main/interiorb-img2.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area ">
-                <img src="assets/images/main/interior114-img3-text.png" alt="">
+                <img src="assets/images/main/interiorb-img3-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior114-img3.png" alt="">
+              <img src="assets/images/main/interiorb-img3.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-label-area ">
-                <img src="assets/images/main/interior114-img4-text.png" alt="">
+                <img src="assets/images/main/interiorb-img4-text.png" alt="">
               </div>
-              <img src="assets/images/main/interior114-img4.png" alt="">
+              <img src="assets/images/main/interiorb-img4.png" alt="">
             </div>
           </div>
           <div class="interior-slide-controller">
-            <div class="swiper-label-area swiper-label-number-area">
-              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
-            </div>
-            <div class="swiper-slide-button-area" data-interior="114">
-              <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-              <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
-            </div>
-            <div class="swiper-pagination progress"></div>
-            <div class="pagination-wrap">
+            <div class="common-slide-controller pagination-wrap">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-label-area swiper-label-number-area">
+              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-interior-button-area main-interior-button-area-117 button-area2">
-        <a href="#interior117" class="main-interior__button main-interior__button-117">117㎡</a>
-      </div>
-      <div id="interior117"  class="interior-content-area interior117">
-        <div class="swiper-container interior117-swiper-container interior-swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior117-img1-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior117-img1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior117-img2-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior117-img2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior117-img3-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior117-img3.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior117-img4-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior117-img4.png" alt="">
-            </div>
-          </div>
-          <div class="interior-slide-controller">
-            <div class="swiper-label-area swiper-label-number-area">
-              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
-            </div>
-            <div class="swiper-slide-button-area" data-interior="117">
-              <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-              <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
-            </div>
-            <div class="swiper-pagination progress"></div>
-            <div class="pagination-wrap">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-interior-button-area main-interior-button-area-139 button-area3">
-        <a href="#interior139" class="main-interior__button main-interior__button-139">139㎡</a>
-      </div>
-      <div id="interior139"  class="interior-content-area interior139 ">
-        <div class="swiper-container interior139-swiper-container interior-swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior139-img1-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior139-img1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior139-img2-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior139-img2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/main/interior139-img3.png" alt="">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior139-img3-text.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/main/interior139-img4.png" alt="">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior139-img4-text.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="interior-slide-controller">
-            <div class="swiper-label-area swiper-label-number-area">
-              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
-            </div>
-            <div class="swiper-slide-button-area" data-interior="139">
-              <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-              <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
-            </div>
-            <div class="swiper-pagination progress"></div>
-            <div class="pagination-wrap">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-interior-button-area main-interior-button-area-145 button-area4">
-        <a href="#interior145" class="main-interior__button main-interior__button-145">145㎡</a>
-      </div>
-      <div id="interior145"  class="interior-content-area interior145">
-        <div class="swiper-container interior145-swiper-container interior-swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior145-img1-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior145-img1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior145-img2-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior145-img2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior145-img3-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior145-img3.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-label-area ">
-                <img src="assets/images/main/interior145-img4-text.png" alt="">
-              </div>
-              <img src="assets/images/main/interior145-img4.png" alt="">
-            </div>
-          </div>
-          <div class="interior-slide-controller">
-            <div class="swiper-label-area swiper-label-number-area">
-              <span class="swiper-label__number">01</span>/<span class="swiper-label__total">01</span>
-            </div>
-            <div class="swiper-slide-button-area" data-interior="145">
-              <button class="swiper-slide-button swiper-slide-button--stop"><span class="blind">일시정지</span></button>
-              <button class="swiper-slide-button swiper-slide-button--play is--hide"><span class="blind">재생</span></button>
-            </div>
-            <div class="swiper-pagination progress"></div>
-            <div class="pagination-wrap">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
+      <div class="interior-side-area">
+        <a href="" class="interior-side__link"><img src="assets/images/main/interior-link-img1.png" alt="Interior"></a>
+        <a href="" class="interior-side__link"><img src="assets/images/main/interior-link-img2.png" alt="type"></a>
       </div>
     </div>
   </div>
   <!--  인테리어-->
-  <!--    브랜드-->
-  <div class="main-section main-section-brand">
-    <div class="main-section-content main-section-content-brand">
-      <div class="brand-text-area" data-aos="fade-up" data-aos-duration="1000">
-        <p class="brand-text brand-text--main">
-          보이는 것을<br>
-          잘 하는 브랜드는<br>
-          많습니다
-        </p>
-        <p class="brand-text brand-text--main-sub">
-          보이지 않는 것에<br> 최선을 다하는 브랜드는 많지 않습니다.
-        </p>
-        <p class="brand-text">
-          독특한 것을 자랑하는 집은 많습니다<br>
-          본질적인 것을 자랑하는 집은 찾기 어렵습니다<br>
-          더샵은 보이지 않는 것에서부터 앞서가는 것을 선택했습니다<br><br>
-
-          집이란, 당신과 가족의 삶을 담는 그릇<br>
-          당신의 평생을 담을 집은 시간의 흐름에도<br>
-          변함없이 견고하게 빛나야 하기 때문입니다<br>
-          <a href="brand.html" class="brand__link">view more</a>
-        </p>
-      </div>
-      <div class="brand-video-area" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <div class="brand-video">
-          <iframe class="brand-video__video" width="1373" height="760" src="https://www.youtube.com/embed/vcazdao58as?rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
 </main>
 <? include "_footer.html"; ?>
+<footer class="footer is--white">
+  <img src="assets/images/common/logo.png" alt="위어뮤즈더광안" class="footer-logo">
+  <div class="footer-text">
+    <p class="footer-text__item">위 어뮤즈 디광안 오피스텔 신축공사</p>
+    <p class="footer-text__item">주소 : 부산광역시 수영구 광안동 776-18번지<span class="footer-separator">|</span>전화 : 051-902-5000</p>
+    <p class="footer-text__item footer-text__item-copyright">© 2021 WEAMUSE., LTD. All Rights Reserved</p>
+  </div>
+</footer>
 </body>
 </html>
