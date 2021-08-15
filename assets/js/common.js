@@ -15,8 +15,9 @@ $(function() {
 
   $('.js-header .header-menu').on('mouseover', function (){
       $('.js-header').addClass('is--show-depth')
+    if($('.js-header').hasClass('is--show-depth')) {
       $('.js-header-bg').addClass('is--active')
-
+    }
   }).on('mouseout', function () {
     $('.js-header').removeClass('is--show-depth')
     $('.js-header-bg').removeClass('is--active')

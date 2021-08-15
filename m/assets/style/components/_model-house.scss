@@ -1,0 +1,277 @@
+.model-house-button-area {
+  z-index: 11;
+  position: absolute;
+  bottom: -40px;
+  right: 5px;
+  .model-house-button {
+    width: 17.6vw;
+    height: 17.6vw;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("../images/common/model-house-button.png");
+    background-size: contain;
+    &.is--active {
+      background-image: url("../images/common/model-house-close.png");
+    }
+    &-model-area {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .button-model-text {
+        position: absolute;
+        bottom: 22%;
+        left: -44%;
+        z-index: -1;
+      }
+    }
+  }
+}
+.model-house {
+  width: 100%;
+  background-color: $point;
+  z-index: 111;
+  color: $white;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image:  url("../images/common/model-house-bg.png");
+  background-position: 100% 100%;
+  background-size: contain;
+  &-header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: $white;
+    padding: 10vh 7% 7.5vw 8.5%;
+    .model-house__copyright {
+      width: 35%;
+    }
+    .model-house-content__title {
+      text-align: right;
+      font-size: 25px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.23;
+      letter-spacing: normal;
+      color: $point;
+      strong {
+        display: block;
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+    padding: 20vw 7% 14vw 8.5%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    box-sizing: border-box;
+    position: relative;
+    .model-house__title {
+      width: 56%;
+      max-width: 312px;
+      display: block;
+    }
+    .model-house__subject {
+      margin: 50px 0 18px;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 0.6;
+      letter-spacing: -1.5px;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .model-house-unit {
+      padding-top: 7.5vw;
+      padding-bottom: 7.5vw;
+      &-list {
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      &__button {
+        color: $point;
+        font-size: 11px;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-radius: 22.9px;
+        background-color: #eeeeee;
+        &.is--active {
+          background-color: $darkBlue;
+          color: $white;
+        }
+      }
+      &__item {
+        height: 100%;
+        box-sizing: border-box;
+        width: calc(20% - 0.5%);
+        transform: translate3d(0, 0, 0);
+        transition: transform 1s;
+
+        & + .model-house-unit__item {
+          margin-left: 1%;
+        }
+      }
+    }
+  }
+  .model-house-quick-menu {
+    position: absolute;
+    bottom: 58px;
+    width: 100%;
+    display: flex;
+    .model-house-quick {
+      &__item {
+        max-width: 163px;
+        width: 16.4%;
+      }
+      &__button {
+        width: 100%;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: -0.9px;
+        text-align: center;
+        color: $white;
+        padding-bottom: 16px;
+        border-bottom: 2px solid;
+        &.is--active,
+        &:hover {
+          color: #8eadce;
+          border-color: #273d6c;
+        }
+      }
+    }
+  }
+  &-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 126px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-image:  url("../images/common/model-house-close.png");
+  }
+}
+
+.model-house-unit {
+  &-content {
+    position: relative;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s ease .1s;
+    -moz-transition: all 0.5s ease .1s;
+    -o-transition: all 0.5s ease .1s;
+    transition: all 0.5s ease .1s;
+    .unit-content-img-area {
+      border-bottom-left-radius: 50px;
+      overflow: hidden;
+      width: 52.4%;
+      height: 235px;
+      display: block;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .unit-content__item {
+      & + .unit-content__item {
+        margin-top: 2px;
+      }
+    }
+    .unit-content__link {
+      transition-property: opacity;
+      transition-timing-function: ease-in-out;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.9px;
+      color: $point;
+      border-bottom: 1px solid $point;
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+      display: flex;
+      align-items: center;
+      height: 27px;
+      &:hover {
+        background-image: url("../images/common/model-house-arrow.png");
+      }
+    }
+    &.is--active {
+      display: flex;
+    }
+  }
+  &.is--active {
+    display: block;
+  }
+}
+.unit-content-text-area {
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  background: $white;
+  width: 47.6%;
+  box-sizing: border-box;
+  padding: 6vw 4vw;
+  height: 235px;
+
+  .unit-content__name {
+    font-size: 20px;
+    line-height: 0.89;
+    text-align: left;
+    color: $point;
+    display: block;
+    margin-bottom: 4vw;
+  }
+}
+
+.model-house-popup-close {
+  position: absolute;
+  bottom: -17px;
+  right: 10px;
+}
+.model-house-button-close {
+  display: none;
+}
+.sub {
+  .model-house-button-area {
+    bottom: -10px;
+    right: 42px;
+    &.is--active {
+      display: none;
+    }
+  }
+  .model-house.is--active {
+    .model-house-button-close {
+      display: block;
+    }
+  }
+  .model-house-button-close {
+    background-repeat: no-repeat;
+    background-image:  url("../images/common/model-house-close.png");
+    width: 127px;
+    height: 120px;
+    border: 0;
+    background-position: 50% 50%;
+    position: fixed;
+    bottom: 15px;
+    right: -68px;
+  }
+}
+.model-house-title-bottom {
+  margin-top: 7.5vw;
+  width: 66%;
+}

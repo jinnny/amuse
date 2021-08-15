@@ -209,14 +209,12 @@ table {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
-  z-index: 11;
   opacity: 0;
-  transition: .2s;
+  transition: opacity .5s;
 }
 .header-bg.is--active {
-  display: block;
   opacity: 1;
+  z-index: 11;
 }
 .header-menu-img {
   opacity: 0;
