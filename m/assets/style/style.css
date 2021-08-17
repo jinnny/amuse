@@ -1146,6 +1146,9 @@ html {
 .main-section-visual .main-visual-swiper-slide2 .main-slide-bg {
   background-image: url("../images/main/main-visual2-img.png");
 }
+.main-section-visual .main-visual-swiper-slide3 .main-slide-bg {
+  background-image: url("../images/main/main-visual3-img.png");
+}
 .main-section-visual .main-visual-swiper-slide.swiper-slide-active .main-slide-bg {
   -webkit-transform: scale(1.01, 1.01) rotate(0.002deg);
   transform: scale(1.01, 1.01) rotate(0.002deg);
@@ -1178,7 +1181,7 @@ html {
   line-height: 1;
   color: #ffffff;
   opacity: 0;
-  width: 50%;
+  width: 33.33%;
   display: block;
   text-align: center;
 }
@@ -1690,7 +1693,7 @@ html {
   padding: 5% 2.5% 0;
   position: absolute;
   right: 0;
-  top: 42%;
+  top: 36%;
   height: 41%;
   box-sizing: border-box;
 }

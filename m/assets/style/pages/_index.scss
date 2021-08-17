@@ -116,6 +116,11 @@
         background-image: url("../images/main/main-visual2-img.png");
       }
     }
+    &3 {
+      .main-slide-bg {
+        background-image: url("../images/main/main-visual3-img.png");
+      }
+    }
     &.swiper-slide-active {
       .main-slide-bg {
         -webkit-transform: scale(1.01, 1.01) rotate(0.002deg);
@@ -153,7 +158,7 @@
     line-height: 1;
     color: $white;
     opacity: 0;
-    width: 50%;
+    width: 33.33%;
     display: block;
     text-align: center;
     &.is--active {
@@ -682,7 +687,7 @@
   padding: 5% 2.5% 0;
   position: absolute;
   right: 0;
-  top: 42%;
+  top: 36%;
   height: 41%;
   box-sizing: border-box;
   .interior-side__link {
