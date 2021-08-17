@@ -210,7 +210,6 @@ table {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity .5s;
 }
 .header-bg.is--active {
   opacity: 1;
@@ -1243,6 +1242,15 @@ html {
   left: auto;
   right: 3%;
 }
+.main-section-community .swiper-button-line {
+  width: 1px;
+  height: 9px;
+  opacity: 0.5;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  background-color: #9c9c9c;
+}
 
 .main-section-content {
   height: 100%;
@@ -1535,7 +1543,7 @@ html {
 .main-section-content-community .pagination-wrap {
   position: absolute;
   right: 0;
-  width: 200px;
+  width: 153px;
   bottom: 35px;
 }
 .main-section-content-community .swiper-button-next, .main-section-content-community .swiper-button-prev {
@@ -1615,7 +1623,7 @@ html {
   opacity: 1;
   -webkit-transition: opacity .5s ease 2s;
   transition: opacity .5s ease 2s;
-  bottom: 24px;
+  top: 6px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1713,7 +1721,7 @@ html {
   background-image: url("../images/main/unit-slide-bg.jpg");
 }
 .main-section-unit .swiper-container .swiper-wrapper {
-  padding-bottom: 280px;
+  padding-bottom: 210px;
 }
 .main-section-unit .blind, .main-section-unit .hide {
   position: absolute !important;
@@ -1908,7 +1916,6 @@ html {
   bottom: -89px;
   left: 0;
   width: 100%;
-  z-index: 11;
   height: 89px;
   display: flex;
   align-items: center;

@@ -164,7 +164,8 @@ $(function() {
     },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
     slidesPerView: 1,
-    loop: true
+    loop: true,
+    allowTouchMove: false
   });
   //life
   //premium

@@ -230,6 +230,15 @@
     left: auto;
     right: 3%;
   }
+  .swiper-button-line {
+    width: 1px;
+    height: 9px;
+    opacity: 0.5;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    background-color: #9c9c9c;
+  }
 }
 .main-section-content {
   height: 100%;
@@ -475,7 +484,7 @@
     .pagination-wrap {
       position: absolute;
       right: 0;
-      width: 200px;
+      width: 153px;
       bottom: 35px;
     }
     .swiper-button-next, .swiper-button-prev {
@@ -568,7 +577,7 @@
     opacity: 1;
     -webkit-transition: opacity .5s ease 2s;
     transition: opacity .5s ease 2s;
-    bottom: 24px;
+    top: 6px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -668,7 +677,7 @@
     background-repeat: no-repeat;
     background-image: url("../images/main/unit-slide-bg.jpg");
     .swiper-wrapper {
-      padding-bottom: 280px;
+      padding-bottom: 210px;
     }
   }
   .blind, .hide {

@@ -32,10 +32,10 @@ $(function() {
 
 
   var premiumSwiper = new Swiper('.community-swiper-container', {
-    pagination: { el: '.swiper-pagination.progress', clickable: true },
+    pagination: { el: '.swiper-pagination', clickable: true },
     // autoplay: { delay: 5e3, disableOnInteraction: !1 },
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: !1
     },
     slidesPerView: 1,
